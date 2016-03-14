@@ -105,7 +105,7 @@ function draw_frog() {
     game.log = log_collision();
     if (game.dead > 0) {
             // @4,2 ; 19x24
-        context.drawImage(deadsprite, 4, 2, 19, 24, game.posX, game.posY, 19, 24);
+        context.drawImage(deadsprite, 0, 0, 30, 30, game.posX, game.posY, 30, 30);
         game.dead--;
     }
     else if (game.dead == 0) {
