@@ -417,7 +417,7 @@ function Car(x, y, lane, speed, model) {
                 context.drawImage(sprites, 45, 264, 29, 24, this.posX, this.posY, 29, 24);
                 break;
             case 2: 
-                context.drawImage(sprites, 81, 263, 24, 26, this.posX, this.posY, 24, 26);
+                context.drawImage(sprites, 81, 263, 28, 26, this.posX, this.posY, 24, 26);
                 break;
             case 3: 
                 context.drawImage(sprites, 9, 300, 30, 21, this.posX, this.posY, 24, 21);
