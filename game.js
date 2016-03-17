@@ -9,42 +9,42 @@ var tabLevel1 = [        // to stock 21 tracks of level 1
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3' // same que tab[0]
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3' // same que tab[0]
 ];
 var tabLevel2 = [        // to stock 16 tracks of level 2
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3'
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3'
 ];
 var tabLevel3 = [        // to stock 11 tracks of level 3
 'assets/frogger.mp3',
@@ -94,7 +94,7 @@ function start_game() {
     });
     board = document.getElementById("game");
     context=board.getContext("2d");
-    sound = document.createElement('video');
+    sound = document.createElement('audio');
     sprites = new Image();
     deadsprite = new Image();
     sprites.src = "assets/frogger_sprites.png"; 
@@ -110,7 +110,7 @@ function start_game() {
         soundAlea(); // determine nombre aléatoire 
         sound.setAttribute('src', soundL1);
         sound.setAttribute('loop', 'true');
-        // sound.play();
+        sound.play();
     }
 }
 
@@ -118,24 +118,24 @@ function start_game() {
 function soundAlea() {
     if (game.level == 1) {
         i = Math.ceil(Math.random()*21);
+        soundL1 = tabLevel1[i];
         console.log(i);
-        soundL1 = tabLevel1[2];
     }
     else if (game.level == 2) {
         i = Math.ceil(Math.random()*16);
-        soundL2 = tabLevel2[2];
+        soundL2 = tabLevel2[i];
     }
     else if (game.level == 3) {
         i = Math.ceil(Math.random()*11);
-        soundL3 = tabLevel3[2];
+        soundL3 = tabLevel3[i];
     }
     else if (game.level == 4) {
         i = Math.ceil((Math.random()*10)/2);
-        soundL4 = tabLevel4[2];
+        soundL4 = tabLevel4[i];
     }
     else {
         i = Math.ceil((Math.random()*10)/2);
-        soundL5 = tabLevel5[2];
+        soundL5 = tabLevel5[i];
     }
 }
 
@@ -231,6 +231,7 @@ function draw_frog() {
     }
     else if (check_win()){
         win();
+        console.log('gagné');
     }
     else {
         if (game.log >= 0) {
@@ -385,9 +386,9 @@ function win() {
     game.win = 15;
     if(game.won[0] && game.won[1] && game.won[2] && game.won[3] && game.won[4]){
         level();
-        soundAlea();
-        sound.setAttribute('src', soundL1);
-        sound.play();
+        // soundAlea();
+        // sound.setAttribute('src', soundL2);
+        // sound.play();
         // trackName ('gala',z);
     }    
 }
