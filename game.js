@@ -64,7 +64,7 @@ function draw_bg()  {
 function draw_info() {
     draw_lives();
     context.font = "bold 14pt arial";
-    context.fillStyle = "#00EE00";
+    context.fillStyle = "#FFFFFF";
     context.fillText("Level ", 74, 545);
     draw_level();
     context.font = "bold 10pt arial";
@@ -87,13 +87,13 @@ function draw_lives() {
 
 function draw_level() {
     context.font = "bold 15pt arial";
-    context.fillStyle = "#00EE00";
+    context.fillStyle = "#FFFFFF";
     context.fillText(game.level, 131, 545);
 }
 
 function draw_score () {
     context.font = "bold 10pt arial";
-    context.fillStyle = "#00EE00";
+    context.fillStyle = "#FFFFFF";
     context.fillText(game.score, 49, 560);
     if (window.localStorage['highscore']) {
         highscore = localStorage['highscore'];
@@ -200,7 +200,7 @@ function game_over() {
     if (game.score >= highscore) {
         localStorage['highscore'] = game.score;
         context.font = "bold 48pt arial";
-        context.fillStyle = "#00EE00";
+        context.fillStyle = "#FFFFFF";
         context.fillText("YOU GOT A", 20, 380);
         context.fillText("HIGHSCORE", 6, 460);
     }
