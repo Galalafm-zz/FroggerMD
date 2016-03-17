@@ -3,6 +3,7 @@ var soundL1 = 0,
     soundL3 = 0,
     soundL4 = 0,
     soundL5 = 0,
+    soundUrl = 0,
     i = 0; // nombre aléatoire entre 0 et 10
 
 var tabLevel1 = [        // to stock 21 tracks of level 1
@@ -386,11 +387,28 @@ function win() {
     game.win = 15;
     if(game.won[0] && game.won[1] && game.won[2] && game.won[3] && game.won[4]){
         level();
-        // soundAlea();
-        // sound.setAttribute('src', soundL2);
-        // sound.play();
+        soundAlea();
+        levelUrl();
+        sound.setAttribute('src', soundUrl);
+        sound.play();
         // trackName ('gala',z);
     }    
+}
+
+function levelUrl() {
+    var soundLevel = game.level;
+    if (soundLevel == 2) {
+        soundUrl = soundL2;
+    }
+    else if (soundLevel == 3) {
+        soundUrl = soundL3;
+    }
+    else if (soundLevel == 4) {
+        soundUrl = soundL4;
+    }
+    else {
+        soundUrl = soundL5;
+    }
 }
 
 function level() {
