@@ -1,3 +1,79 @@
+var soundL1 = 0,
+    soundL2 = 0,
+    soundL3 = 0,
+    soundL4 = 0,
+    soundL5 = 0,
+    i = 0; // nombre aléatoire entre 0 et 10
+
+var tabLevel1 = [        // to stock 21 tracks of level 1
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3' // same que tab[0]
+];
+var tabLevel2 = [        // to stock 16 tracks of level 2
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3'
+];
+var tabLevel3 = [        // to stock 11 tracks of level 3
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3'
+];
+var tabLevel4 = [        // to stock 5 tracks of level 4
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3'
+];
+var tabLevel5 = [        // to stock 5 tracks of level 5
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3'
+];
+
 function start_game() {
     game = new Game();
    $(document).keydown(function(e) {
@@ -18,10 +94,7 @@ function start_game() {
     });
     board = document.getElementById("game");
     context=board.getContext("2d");
-    theme = document.createElement('audio');
-    theme.setAttribute('src', 'assets/frogger.mp3');
-    theme.setAttribute('loop', 'true');
-    theme.play();
+    sound = document.createElement('video');
     sprites = new Image();
     deadsprite = new Image();
     sprites.src = "assets/frogger_sprites.png"; 
@@ -32,20 +105,53 @@ function start_game() {
         make_cars();
         make_logs();
         draw_frog();
+        trackName('gala');
         setInterval(game_loop, 50);
+        soundAlea(); // determine nombre aléatoire 
+        sound.setAttribute('src', soundL1);
+        sound.setAttribute('loop', 'true');
+        // sound.play();
     }
 }
+
+
+function soundAlea() {
+    if (game.level == 1) {
+        i = Math.ceil(Math.random()*21);
+        console.log(i);
+        soundL1 = tabLevel1[2];
+    }
+    else if (game.level == 2) {
+        i = Math.ceil(Math.random()*16);
+        soundL2 = tabLevel2[2];
+    }
+    else if (game.level == 3) {
+        i = Math.ceil(Math.random()*11);
+        soundL3 = tabLevel3[2];
+    }
+    else if (game.level == 4) {
+        i = Math.ceil((Math.random()*10)/2);
+        soundL4 = tabLevel4[2];
+    }
+    else {
+        i = Math.ceil((Math.random()*10)/2);
+        soundL5 = tabLevel5[2];
+    }
+}
+
 
 function game_loop() {
     draw_bg();
     draw_info();
     draw_cars();
     draw_logs();
-    draw_wins()
+    draw_wins();
     if (game.lives > 0) { 
         draw_frog();
-    } else {
+    }
+    else {
         game_over();
+        sound.pause();
     }
 }
 
@@ -279,6 +385,10 @@ function win() {
     game.win = 15;
     if(game.won[0] && game.won[1] && game.won[2] && game.won[3] && game.won[4]){
         level();
+        soundAlea();
+        sound.setAttribute('src', soundL1);
+        sound.play();
+        // trackName ('gala',z);
     }    
 }
 
@@ -494,3 +604,12 @@ function Game() {
         this.win = -1;
     }
 }
+
+// initialize tracks list
+
+function trackName (msg){
+    document.getElementById('track').innerText = msg
+}
+
+
+
