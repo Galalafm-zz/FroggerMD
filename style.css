@@ -3,10 +3,9 @@
 }
 
 canvas {
-    background-color: #cb630a;
     padding: 5px;
     margin: 10px;
-    border-width: 60px;
+    border-width: 5px;
     border-color: #34CA97;
     border-style: solid;
 }
