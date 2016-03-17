@@ -5,8 +5,8 @@ var soundL1 = 0,
     soundL5 = 0,
     soundUrl = 0,
     i = 0; // nombre aléatoire entre 0 et 10
-
-var tabLevel1 = [        // to stock 21 tracks of level 1
+var idYT = "TI79P6_Jl3I";
+var tabLevel1 = [        // to stock 21 ID youtube tracks of level 1
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger.mp3',
@@ -29,7 +29,7 @@ var tabLevel1 = [        // to stock 21 tracks of level 1
 'assets/frogger.mp3',
 'assets/frogger.mp3' // same que tab[0]
 ];
-var tabLevel2 = [        // to stock 16 tracks of level 2
+var tabLevel2 = [        // to stock 16 ID youtube tracks of level 2
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger.mp3',
@@ -47,7 +47,7 @@ var tabLevel2 = [        // to stock 16 tracks of level 2
 'assets/frogger.mp3',
 'assets/frogger.mp3'
 ];
-var tabLevel3 = [        // to stock 11 tracks of level 3
+var tabLevel3 = [        // to stock 11 ID youtube tracks of level 3
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger.mp3',
@@ -60,14 +60,14 @@ var tabLevel3 = [        // to stock 11 tracks of level 3
 'assets/frogger3.mp3',
 'assets/frogger3.mp3'
 ];
-var tabLevel4 = [        // to stock 5 tracks of level 4
+var tabLevel4 = [        // to stock 5 ID youtube tracks of level 4
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger3.mp3',
 'assets/frogger3.mp3'
 ];
-var tabLevel5 = [        // to stock 5 tracks of level 5
+var tabLevel5 = [        // to stock 5 ID youtube tracks of level 5
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger.mp3',
@@ -95,7 +95,10 @@ function start_game() {
     });
     board = document.getElementById("game");
     context=board.getContext("2d");
-    sound = document.createElement('audio');
+    // sound = document.createElement('div');
+    // sound.setAttribute('width', '0');
+    // sound.setAttribute('height', '0');
+    // sound.setAttribute('frameborder', '0');
     sprites = new Image();
     deadsprite = new Image();
     sprites.src = "assets/frogger_sprites.png"; 
@@ -109,9 +112,9 @@ function start_game() {
         trackName('gala');
         setInterval(game_loop, 50);
         soundAlea(); // determine nombre aléatoire 
-        sound.setAttribute('src', soundL1);
-        sound.setAttribute('loop', 'true');
-        sound.play();
+        // sound.setAttribute('src', soundL1);
+        // sound.setAttribute('loop', 'true');
+        // iframe(idYT);
     }
 }
 
@@ -628,6 +631,12 @@ function Game() {
 
 function trackName (msg){
     document.getElementById('track').innerText = msg
+}
+
+// initialize iframe
+
+function iframe(idYT) {
+    document.getElementById('player').innerHTML = '<iframe width="0" height="0" src="https://www.youtube.com/embed/'+ idYT +'?rel=0&amp;autoplay=1"'+' frameborder="0"></iframe>';
 }
 
 
