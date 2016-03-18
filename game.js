@@ -5,32 +5,35 @@ var soundL1 = 0,
     soundL5 = 0,
     soundUrl = 0,
     i = 0; // nombre aléatoire entre 0 et 10
-// var idYT = "TI79P6_Jl3I";
+var idYT = 0;
 var tabLevel1 = [        // to stock 21 ID youtube tracks of level 1
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3' // same que tab[0]
+'TI79P6_Jl3I',
+'7-Taz8WTqLk',
+'pyjt_G44MmQ',
+'-AZor70LmJ0',
+'I2mZgvl21X4',
+'kFMMQm-LCV4',
+'HSD303pGFRA',
+'VRASPkOr-RI',
+'GdSdeq0iiEE',
+'AJm9z8GBQ4M',
+'t64m5Lm7CrA3',
+'eDzlxz2F5qI',
+'TI79P6_Jl3I',
+'7-Taz8WTqLk',
+'pyjt_G44MmQ',
+'-AZor70LmJ0',
+'I2mZgvl21X4',
+'kFMMQm-LCV4',
+'HSD303pGFRA',
+'VRASPkOr-RI',
+'GdSdeq0iiEE',
+'AJm9z8GBQ4M',
+'t64m5Lm7CrA3',
+'eDzlxz2F5qI', // same que tab[0]
 ];
 var tabLevel2 = [        // to stock 16 tracks of level 2
-'assets/froggerX.mp3',
+'j3AVrxx3QoQ',
 'assets/froggerX.mp3',
 'assets/froggerX.mp3',
 'assets/froggerX.mp3',
@@ -114,7 +117,7 @@ function start_game() {
         soundAlea(); // determine nombre aléatoire 
         // sound.setAttribute('src', soundL1);
         // sound.setAttribute('loop', 'true');
-        // iframe(idYT);
+        iframe(idYT);
         // sound.play();
     }
 }
@@ -394,8 +397,9 @@ function win() {
         soundAlea();
         levelUrl();
         console.log(soundUrl);
-        sound.setAttribute('src', soundUrl);
-        sound.play();
+        iframe(idYT);
+        // sound.setAttribute('src', soundUrl);
+        // sound.play();
         // trackName ('gala',z);
     }    
 }
@@ -638,7 +642,15 @@ function trackName (msg){
 // initialize iframe
 
 function iframe(idYT) {
+    if (game.level == 1) {
+        idYT=tabLevel1[0];//soundL1;
+    }
+    else {
+         idYT=tabLevel2[0];//soundUrl 
+    }
+    console.log(idYT);
     document.getElementById('player').innerHTML = '<iframe width="0" height="0" src="https://www.youtube.com/embed/'+ idYT +'?rel=0&amp;autoplay=1"'+' frameborder="0"></iframe>';
+
 }
 
 
