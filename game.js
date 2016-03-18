@@ -371,15 +371,7 @@ function win() {
         soundAlea();
         levelUrl();
         console.log(soundUrl);
-<<<<<<< Updated upstream
         iframe(idYT);
-=======
-<<<<<<< HEAD
-        iframe(idYT)
-=======
-        iframe(idYT);
->>>>>>> origin/master
->>>>>>> Stashed changes
         // sound.setAttribute('src', soundUrl);
         // sound.play();
         // trackName ('gala',z);
