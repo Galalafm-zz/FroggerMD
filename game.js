@@ -77,7 +77,6 @@ var tabLevel5 = [        // to stock 5 ID youtube tracks of level 5
 'assets/frogger3.mp3',
 'assets/frogger3.mp3'
 ];
-
 function start_game() {
     game = new Game();
    $(document).keydown(function(e) {
@@ -121,8 +120,6 @@ function start_game() {
         // sound.play();
     }
 }
-
-
 function soundAlea() {
     if (game.level == 1) {
         i = Math.ceil(Math.random()*21);
@@ -146,8 +143,6 @@ function soundAlea() {
         soundL5 = tabLevel5[i];
     }
 }
-
-
 function game_loop() {
     draw_bg();
     draw_info();
@@ -162,9 +157,7 @@ function game_loop() {
         sound.pause();
     }
 }
-
 // drawing functions: bg, info, frogger, cars, logs, wins
-
 function draw_bg()  {
     context.fillStyle="#191970";
     context.fillRect(0,0,399,284);
@@ -174,7 +167,6 @@ function draw_bg()  {
     context.drawImage(sprites, 0, 119, 399, 34, 0, 283, 399, 34);
     context.drawImage(sprites, 0, 119, 399, 34, 0, 495, 399, 34);
 }
-
 function draw_info() {
     draw_lives();
     context.font = "bold 14pt arial";
@@ -186,7 +178,6 @@ function draw_info() {
     context.fillText("Highscore: ", 200, 560);
     draw_score();
 }
-
 function draw_lives() {
     var x = 4;
     var y = 532;
@@ -198,13 +189,11 @@ function draw_lives() {
         x += 14;
     }
 }
-
 function draw_level() {
     context.font = "bold 15pt arial";
     context.fillStyle = "#FFFFFF";
     context.fillText(game.level, 131, 545);
 }
-
 function draw_score () {
     context.font = "bold 10pt arial";
     context.fillStyle = "#FFFFFF";
@@ -214,7 +203,6 @@ function draw_score () {
     } else highscore = 0;
     context.fillText(highscore, 272, 560);
 }
-
 function draw_frog() {
     game.log = log_collision();
     if (game.dead > 0) {
@@ -262,7 +250,6 @@ function draw_frog() {
         }
     }
 }
-
 function draw_wins() {
     for (var i=0; i<game.won.length; i++) {
         if(game.won[i]) {
@@ -286,7 +273,6 @@ function draw_wins() {
         }
     }
 }
-
 function draw_cars() {
     for (var i=0; i<cars.length; i++) {
         cars[i].move();
@@ -296,7 +282,6 @@ function draw_cars() {
         cars[i].draw();
     }
 }
-
 function draw_logs() {
     for (var i=0; i< logs.length; i++) {
         logs[i].move();
@@ -306,7 +291,6 @@ function draw_logs() {
         logs[i].draw();
     }
 }
-
 function game_over() {
     context.font = "bold 72pt arial";
     context.fillStyle = "#FFFFFF";
@@ -320,11 +304,7 @@ function game_over() {
         context.fillText("HIGHSCORE", 6, 460);
     }
 }
-
-
-
 // movement functions
-
 function up() {
     if (bounds_check(game.posX, game.posY-30)) {
         game.posY -= 30;
@@ -336,7 +316,6 @@ function up() {
     }
     game.facing = 'u';
 }
-
 function down() {
     if (bounds_check(game.posX, game.posY+30)) {
         game.posY += 30;
@@ -344,17 +323,14 @@ function down() {
     }
     game.facing = 'd';
 }
-
 function left() {
     if (bounds_check(game.posX-30, game.posY)) game.posX -= 30;
     game.facing = 'l';
 }
-
 function right() {
     if (bounds_check(game.posX+30, game.posY)) game.posX += 30;
     game.facing = 'r';
 }
-
 function bounds_check(x, y) {
     if (y > 90 && y < 510 && x > 0 && x < 369) {
         return true;
@@ -366,7 +342,6 @@ function bounds_check(x, y) {
     }
     return false;
 }
-
 function check_win() {
     if(game.posY > 60 && game.posY < 100){
         if(game.posX > 5 && game.posX < 40 && !game.won[0]){
@@ -388,7 +363,6 @@ function check_win() {
     }
     return false;
 }
-
 function win() {
     game.score += 50;
     game.win = 15;
@@ -397,13 +371,20 @@ function win() {
         soundAlea();
         levelUrl();
         console.log(soundUrl);
+<<<<<<< Updated upstream
         iframe(idYT);
+=======
+<<<<<<< HEAD
+        iframe(idYT)
+=======
+        iframe(idYT);
+>>>>>>> origin/master
+>>>>>>> Stashed changes
         // sound.setAttribute('src', soundUrl);
         // sound.play();
         // trackName ('gala',z);
     }    
 }
-
 function levelUrl() {
     var soundLevel = game.level;
     if (soundLevel == 2) {
@@ -419,7 +400,6 @@ function levelUrl() {
         soundUrl = soundL5;
     }
 }
-
 function level() {
     for (var i=0; i<game.won.length; i++) {
         game.won[i] = false;
@@ -427,7 +407,6 @@ function level() {
     game.score += 1000;
     game.level ++;
 }
-
 // collision detection
 // create boxes around two sprites and compare for overlap
 function collides(x1, y1, w1, h1, x2, y2, w2, h2) {
@@ -436,7 +415,6 @@ function collides(x1, y1, w1, h1, x2, y2, w2, h2) {
             ((x1 <= x2+w2 && x1 >=x2) && (y1+h1 <= y2+h2 && y1+h1 >= y2)) ||
             ((x1+w1 <= x2+w2 && x1+w1 >= x2) && (y1+h1 <= y2+h2 && y1+h1 >= y2)));
 }
-
 function car_collision() {
     if (game.posY < 505 && game.posY > 270) {
         for (var i=0; i<cars.length; i++) {
@@ -445,7 +423,6 @@ function car_collision() {
     }
     return false;
 }
-
 function log_collision() {
     if (game.posY < 270) {
         for (var i=0; i<logs.length; i++) {
@@ -454,22 +431,17 @@ function log_collision() {
     }
     return -1;
 }
-
 function water_collision() {
     return (game.posY > 105 && game.posY < 270);
 }
-
 function sploosh() {
     game.lives--;
     game.dead = 20;
 }
-
-// object initializers - cars, logs
-
+// object initializers - cars, logs
 function make_cars() {
     cars = [make_car(0), make_car(0, 130, 3), make_car(0, 260, 3), make_car(1), make_car(2), make_car(2, 150, 0), make_car(3, 200), make_car(4), make_car(5), make_car(5, 80), make_car(5, 240)];
 }
-
 function make_car(row, x, model) {
     switch(row) {
         case 0:
@@ -492,11 +464,9 @@ function make_car(row, x, model) {
             break;
     }
 }
-
 function make_logs() {
     logs = [make_log(7), make_log(7, 170), make_log(8), make_log(8, 200), make_log(9), make_log(10), make_log(11), make_log(11, 100, 0), make_log(12)];
 }
-
 function make_log(row, x, len) {
     switch(row) {
         case 7:
@@ -519,7 +489,6 @@ function make_log(row, x, len) {
             break;
     }
 }
-
 /* game "classes" - game, car, log
  * Car models:
  *   0: pink sedan
@@ -532,9 +501,7 @@ function make_log(row, x, len) {
  *   1: medium
  *   2: small
  */
-
 var models = [{width: 30, height: 22, dir: 1}, {width: 29, height: 24, dir: -1}, {width:24, height: 26, dir: 1}, {width: 24, height: 21, dir: -1}, {width: 46, height: 19, dir: 1}];
-
 function Car(x, y, lane, speed, model) {
     this.posX = x;
     this.posY = y;
@@ -569,9 +536,7 @@ function Car(x, y, lane, speed, model) {
         return ((this.posX + this.width) < 0 || this.posX > 399);
     }
 }
-
 var lengths = [{width: 179, height: 21}, {width: 118, height: 21}, {width: 85, height: 22}];
-
 function Log (x, y, row, speed, dir, length) {
     this.posX = x;
     this.posY = y;
@@ -589,11 +554,9 @@ function Log (x, y, row, speed, dir, length) {
             case 0:
                 context.drawImage(sprites, 6, 165, 179, 21, this.posX, this.posY, 179, 21);
                 break;
-
             case 1:
                 context.drawImage(sprites, 5, 197, 118, 21, this.posX, this.posY, 118, 21);
                 break;
-
             case 2:
                 context.drawImage(sprites, 6, 229, 85, 22, this.posX, this.posY, 85, 22);
                 break;
@@ -603,10 +566,8 @@ function Log (x, y, row, speed, dir, length) {
         return ((this.posX + this.width) < 0 || this.posX > 399);
     }
 }
-
 // y-coords of rows starting with first traffic row
 var rows = [473, 443, 413, 383, 353, 323, 288, 261, 233, 203, 173, 143, 113];
-
 function Game() {
     this.lives = 5;
     this.extra = 0;
@@ -632,15 +593,11 @@ function Game() {
         this.win = -1;
     }
 }
-
 // initialize tracks list
-
 function trackName (msg){
     document.getElementById('track').innerText = msg
 }
-
 // initialize iframe
-
 function iframe(idYT) {
     if (game.level == 1) {
         idYT=tabLevel1[0];//soundL1;
@@ -650,8 +607,4 @@ function iframe(idYT) {
     }
     console.log(idYT);
     document.getElementById('player').innerHTML = '<iframe width="0" height="0" src="https://www.youtube.com/embed/'+ idYT +'?rel=0&amp;autoplay=1"'+' frameborder="0"></iframe>';
-
 }
-
-
-
