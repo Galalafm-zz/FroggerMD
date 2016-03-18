@@ -4,9 +4,38 @@ var soundL1 = 0,
     soundL4 = 0,
     soundL5 = 0,
     soundUrl = 0,
-    i = 0; // nombre aléatoire entre 0 et 10
-var idYT = 0;
+    i = 0, // nombre aléatoire entre 0 et 10
+    idYT = 0,
+    idCover = 0,
+    track = 0,
+    artist = 0;
+
+
 var tabLevel1 = [        // to stock 21 ID youtube tracks of level 1
+'XlBJR7ZELAM',
+'7-Taz8WTqLk',
+'wczW3GqXs9U',
+'-AZor70LmJ0',
+'I2mZgvl21X4',
+'kFMMQm-LCV4',
+'HSD303pGFRA',
+'VRASPkOr-RI',
+'GdSdeq0iiEE',
+'AJm9z8GBQ4M',
+'t64m5Lm7CrA',
+'eDzlxz2F5qI',
+'D0rsWCT-kXo',
+'X1ONMVaZlhI',
+'bVXofbZtAL8',
+'84bwIcC1Brk',
+'COTZGbcS5BQ',
+'BzS2LbJXLz4',
+'E7QJs6c_jk4',
+'hdN66CS7d_E',
+'XlBJR7ZELAM', // same que tab[0]
+];
+
+var tabLevel1_cover = [        // to stock cover ID of level 1
 'TI79P6_Jl3I',
 '7-Taz8WTqLk',
 'pyjt_G44MmQ',
@@ -30,46 +59,183 @@ var tabLevel1 = [        // to stock 21 ID youtube tracks of level 1
 'GdSdeq0iiEE',
 'AJm9z8GBQ4M',
 't64m5Lm7CrA3',
-'eDzlxz2F5qI', // same que tab[0]
+'TI79P6_Jl3I', // same que tab[0]
 ];
+
+var tabLevel1_track = [        // to stock track name of level 1
+'Timing (Original Mix)',
+'Korrelig (Original Mix)',
+'Room',
+'Take Me To Your Paradise (Gregorythme Remix)',
+'Ashtar (Original Mix)',
+'The Song (Original Mix)',
+'Foreign Guest',
+'Under The Bridge',
+'Under The River',
+'Ebb and Flow',
+'Moan (Trentemoller Remix)',
+'Confessions of an English Opium Eater',
+'Phalanx',
+'Warg',
+'Hydra (Original Mix)',
+'Bang The Box (Original Mix)',
+'Nonneo (Donato Dozzy Remix)',
+'No Distance (Lake People Remix)',
+'Work (Marcel Dettmann Remix)',
+'Aches [Studio Barnhaus]',
+'Machine (John Talabot\'s Synthedit)',
+'Another earth',
+'Silent Space',
+'Timing (Original Mix)', // same que tab[0]
+];
+
+var tabLevel1_artist = [        // to stock artist name of level 1
+'Guy Gerber',
+'Egbert',
+'Alberto Ruiz',
+'Miyagi',
+'Kevin Lucas',
+'Stimming',
+'Rek',
+'Martin Landsky',
+'YokoO\'s (Above The Clouds Live Edit)',
+'Archie Hamilton',
+'Trentemoller',
+'Danton Eeprom',
+'Recondite',
+'Recondite',
+'Agents Of Time',
+'Little By Little',
+'Tin Man',
+'Guy Gerber & Dixon',
+'Junior Boys',
+'Baba Stiltz',
+'John Talabot',
+'Tale of Us',
+'Tale of Us',
+'Guy Gerber', // same que tab[0]
+];
+
 var tabLevel2 = [        // to stock 16 tracks of level 2
-'j3AVrxx3QoQ',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerY.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3',
-'assets/froggerX.mp3'
+'-hrWHQ1Yxlo',
+'C0pACItGzpQ',
+'G8uDFn-8ZXg',
+'zI6fUMX6uKI',
+'jqAXq-UAmys',
+'KtoBDBAY6Z4',
+'isSuEYFjiFk',
+'0wvxnaQ5cbs',
+'xiNsu6BCRu8',
+'LO-p0got1vM',
+'xiJVYJwuCic',
+'4aSfIpzlGpQ',
+'Go14fQGV8Zw',
+'NOGWipcBlRE',
+'dbqobhOQ8qY',
+'-hrWHQ1Yxlo'
 ];
+
+var tabLevel2_cover = [        // to stock cover ID of level 2 PAS FAIT
+'-hrWHQ1Yxlo',
+'C0pACItGzpQ',
+'G8uDFn-8ZXg',
+'zI6fUMX6uKI',
+'jqAXq-UAmys',
+'KtoBDBAY6Z4',
+'isSuEYFjiFk',
+'0wvxnaQ5cbs',
+'xiNsu6BCRu8',
+'LO-p0got1vM',
+'xiJVYJwuCic',
+'4aSfIpzlGpQ',
+'Go14fQGV8Zw',
+'NOGWipcBlRE',
+'dbqobhOQ8qY',
+'-hrWHQ1Yxlo'
+];
+
+var tabLevel2_track = [        // to stock track name of level 2
+'Eurasia (Gui\'s Version)',
+'C0pACItGzpQ',
+'G8uDFn-8ZXg',
+'zI6fUMX6uKI',
+'jqAXq-UAmys',
+'KtoBDBAY6Z4',
+'isSuEYFjiFk',
+'0wvxnaQ5cbs',
+'xiNsu6BCRu8',
+'LO-p0got1vM',
+'xiJVYJwuCic',
+'4aSfIpzlGpQ',
+'Go14fQGV8Zw',
+'NOGWipcBlRE',
+'dbqobhOQ8qY',
+'-hrWHQ1Yxlo'
+];
+
+var tabLevel2_artist = [        // to stock artist name of level 2
+'Eurasia (Gui\'s Version)',
+'C0pACItGzpQ',
+'G8uDFn-8ZXg',
+'zI6fUMX6uKI',
+'jqAXq-UAmys',
+'KtoBDBAY6Z4',
+'isSuEYFjiFk',
+'0wvxnaQ5cbs',
+'xiNsu6BCRu8',
+'LO-p0got1vM',
+'xiJVYJwuCic',
+'4aSfIpzlGpQ',
+'Go14fQGV8Zw',
+'NOGWipcBlRE',
+'dbqobhOQ8qY',
+'-hrWHQ1Yxlo'
+];
+ 
 var tabLevel3 = [        // to stock 11 ID youtube tracks of level 3
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3'
+'vpOOQuV3S0U',
+'ddnQl1QZCjg',
+'yq8rkO_y3js',
+'66d2E6B5Yx0',
+'GBA_mQQ31iU',
+'IejqrcG41UU',
+'Vq2SFsfWpX4',
+'EM50Oj6rz1k',
+'j3AVrxx3QoQ',
+'5olq3S8yVaE',
+'vpOOQuV3S0U'
 ];
+
+var tabLevel3_cover = [        // to stock 11 cover ID of level 3
+'vpOOQuV3S0U',
+'ddnQl1QZCjg',
+'yq8rkO_y3js',
+'66d2E6B5Yx0',
+'GBA_mQQ31iU',
+'IejqrcG41UU',
+'Vq2SFsfWpX4',
+'EM50Oj6rz1k',
+'j3AVrxx3QoQ',
+'5olq3S8yVaE',
+'vpOOQuV3S0U'
+];
+
 var tabLevel4 = [        // to stock 5 ID youtube tracks of level 4
+'c8R-420Yt2U',
+'vz32qKNafns',
+'assets/frogger.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3'
+];
+
+var tabLevel4_cover = [        // to stock 5 cover ID of level 4
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger3.mp3',
 'assets/frogger3.mp3'
 ];
+
 var tabLevel5 = [        // to stock 5 ID youtube tracks of level 5
 'assets/frogger.mp3',
 'assets/frogger.mp3',
@@ -77,6 +243,16 @@ var tabLevel5 = [        // to stock 5 ID youtube tracks of level 5
 'assets/frogger3.mp3',
 'assets/frogger3.mp3'
 ];
+
+var tabLevel5_cover = [        // to stock 5 cover ID of level 5
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3'
+];
+
+
 function start_game() {
     game = new Game();
    $(document).keydown(function(e) {
@@ -111,7 +287,6 @@ function start_game() {
         make_cars();
         make_logs();
         draw_frog();
-        trackName('gala');
         setInterval(game_loop, 50);
         soundAlea(); // determine nombre aléatoire 
         // sound.setAttribute('src', soundL1);
@@ -120,23 +295,42 @@ function start_game() {
         // sound.play();
     }
 }
+
+function restart() {
+    game = new Game();
+    game_loop();
+    soundAlea(); // determine nombre aléatoire 
+    iframe(idYT);
+}
+
 function soundAlea() {
     if (game.level == 1) {
         i = Math.ceil(Math.random()*21);
         soundL1 = tabLevel1[i];
-        console.log(i);
+        artist = tabLevel1_artist[i];
+        track = tabLevel1_track[i];
+        idCover = tabLevel1_cover[i];
     }
     else if (game.level == 2) {
         i = Math.ceil(Math.random()*16);
         soundL2 = tabLevel2[i];
+        artist = tabLevel1_artist[i];
+        track = tabLevel1_track[i];
+        idCover = tabLevel1_cover[i];
     }
     else if (game.level == 3) {
         i = Math.ceil(Math.random()*11);
         soundL3 = tabLevel3[i];
+        artist = tabLevel1_artist[i];
+        track = tabLevel1_track[i];
+        idCover = tabLevel1_cover[i];
     }
     else if (game.level == 4) {
         i = Math.ceil((Math.random()*10)/2);
         soundL4 = tabLevel4[i];
+        artist = tabLevel1_artist[i];
+        track = tabLevel1_track[i];
+        idCover = tabLevel1_cover[i];
     }
     else {
         i = Math.ceil((Math.random()*10)/2);
@@ -154,13 +348,15 @@ function game_loop() {
     }
     else {
         game_over();
-        sound.pause();
+        document.getElementById('player').innerHTML = '#';
     }
 }
 // drawing functions: bg, info, frogger, cars, logs, wins
 function draw_bg()  {
-    context.fillStyle="#191970";
+    context.fillStyle="#1B5582"; //"#191970";
     context.fillRect(0,0,399,284);
+    context.fillStyle="#022331"; //"#191970";
+    context.fillRect(0,0,399,73);
     context.fillStyle="#000000";
     context.fillRect(0,284,399,283);
     context.drawImage(sprites, 0, 0, 399, 113, 0, 0, 399, 113);
@@ -169,13 +365,13 @@ function draw_bg()  {
 }
 function draw_info() {
     draw_lives();
-    context.font = "bold 14pt arial";
-    context.fillStyle = "#FFFFFF";
-    context.fillText("Level ", 74, 545);
+    context.font = "bold 12pt montserrat";
+    context.fillStyle = "#3B8E6B"; //"#3B8E6B";
+    context.fillText(" Level ", 74, 545);
     draw_level();
-    context.font = "bold 10pt arial";
-    context.fillText("Score: ", 4, 560);
-    context.fillText("Highscore: ", 200, 560);
+    context.font = "bold 10pt montserrat";
+    context.fillText("Score  ", 4, 560);
+    context.fillText("Highscore  ", 200, 560);
     draw_score();
 }
 function draw_lives() {
@@ -190,12 +386,12 @@ function draw_lives() {
     }
 }
 function draw_level() {
-    context.font = "bold 15pt arial";
-    context.fillStyle = "#FFFFFF";
+    context.font = "bold 15pt montserrat";
+    context.fillStyle = "#3B8E6B";
     context.fillText(game.level, 131, 545);
 }
 function draw_score () {
-    context.font = "bold 10pt arial";
+    context.font = "bold 10pt montserrat";
     context.fillStyle = "#FFFFFF";
     context.fillText(game.score, 49, 560);
     if (window.localStorage['highscore']) {
@@ -292,16 +488,24 @@ function draw_logs() {
     }
 }
 function game_over() {
-    context.font = "bold 72pt arial";
+    context.fillStyle="#022331"; //"#191970";
+    context.fillRect(0,50,399,445);
+    context.fillStyle="#3B8E6B"; //"#191970";
+    context.fillRect(0,135,500,140);
+    context.font = "bold 42pt montserrat";
     context.fillStyle = "#FFFFFF";
-    context.fillText("GAME", 60, 150);
-    context.fillText("OVER", 60, 300);
+    context.fillText("GAME OVER", 20, 200);
+    context.drawImage(sprites, 12, 369, 23, 17, 187, 503, 23, 17);
     if (game.score >= highscore) {
         localStorage['highscore'] = game.score;
-        context.font = "bold 48pt arial";
+        context.font = "bold 20pt montserrat";
         context.fillStyle = "#FFFFFF";
-        context.fillText("YOU GOT A", 20, 380);
-        context.fillText("HIGHSCORE", 6, 460);
+        context.fillText("YOU GOT A HIGHSCORE !", 30, 250);
+    }
+    else {
+        context.font = "bold 20pt montserrat";
+        context.fillStyle = "#FFFFFF";
+        context.fillText("TRY AGAIN !", 120, 250);
     }
 }
 // movement functions
@@ -363,6 +567,7 @@ function check_win() {
     }
     return false;
 }
+
 function win() {
     game.score += 50;
     game.win = 15;
@@ -372,9 +577,10 @@ function win() {
         levelUrl();
         console.log(soundUrl);
         iframe(idYT);
-        // sound.setAttribute('src', soundUrl);
-        // sound.play();
-        // trackName ('gala',z);
+        console.log(artist, track, idCover);
+        trackName(track);
+        trackArtist(artist);
+        trackCover(idCover);
     }    
 }
 function levelUrl() {
@@ -529,6 +735,7 @@ function Car(x, y, lane, speed, model) {
     }
 }
 var lengths = [{width: 179, height: 21}, {width: 118, height: 21}, {width: 85, height: 22}];
+
 function Log (x, y, row, speed, dir, length) {
     this.posX = x;
     this.posY = y;
@@ -585,17 +792,26 @@ function Game() {
         this.win = -1;
     }
 }
-// initialize tracks list
-function trackName (msg){
-    document.getElementById('track').innerText = msg
+// initialize playlist
+function trackName (track){
+    document.getElementById('track').innerText = track;
 }
+
+function trackArtist (artist){
+    document.getElementById('artist').innerText = artist;
+}
+
+function trackCover (idCover){
+    document.getElementById('cover').innerHTML = '<img alt="Pochette de l\'album" src="assets/"'+idCover+'>';
+}
+
 // initialize iframe
 function iframe(idYT) {
     if (game.level == 1) {
-        idYT=tabLevel1[0];//soundL1;
+        idYT=soundL1;
     }
     else {
-         idYT=tabLevel2[0];//soundUrl 
+         idYT=soundUrl; 
     }
     console.log(idYT);
     document.getElementById('player').innerHTML = '<iframe width="0" height="0" src="https://www.youtube.com/embed/'+ idYT +'?rel=0&amp;autoplay=1"'+' frameborder="0"></iframe>';
