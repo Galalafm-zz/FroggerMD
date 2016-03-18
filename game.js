@@ -5,7 +5,7 @@ var soundL1 = 0,
     soundL5 = 0,
     soundUrl = 0,
     i = 0; // nombre aléatoire entre 0 et 10
-var idYT = "TI79P6_Jl3I";
+// var idYT = "TI79P6_Jl3I";
 var tabLevel1 = [        // to stock 21 ID youtube tracks of level 1
 'assets/frogger.mp3',
 'assets/frogger.mp3',
