@@ -29,6 +29,7 @@ var tabLevel1 = [        // to stock 21 ID youtube tracks of level 1
 'assets/frogger.mp3',
 'assets/frogger.mp3' // same que tab[0]
 ];
+<<<<<<< Updated upstream
 var tabLevel2 = [        // to stock 16 ID youtube tracks of level 2
 'assets/frogger.mp3',
 'assets/frogger.mp3',
@@ -46,6 +47,25 @@ var tabLevel2 = [        // to stock 16 ID youtube tracks of level 2
 'assets/frogger.mp3',
 'assets/frogger.mp3',
 'assets/frogger.mp3'
+=======
+var tabLevel2 = [        // to stock 16 tracks of level 2
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerY.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3',
+'assets/froggerX.mp3'
+>>>>>>> Stashed changes
 ];
 var tabLevel3 = [        // to stock 11 ID youtube tracks of level 3
 'assets/frogger.mp3',
@@ -112,9 +132,15 @@ function start_game() {
         trackName('gala');
         setInterval(game_loop, 50);
         soundAlea(); // determine nombre aléatoire 
+<<<<<<< Updated upstream
         // sound.setAttribute('src', soundL1);
         // sound.setAttribute('loop', 'true');
         // iframe(idYT);
+=======
+        sound.setAttribute('src', soundL1);
+        sound.setAttribute('loop', 'true');
+        // sound.play();
+>>>>>>> Stashed changes
     }
 }
 
@@ -392,6 +418,7 @@ function win() {
         level();
         soundAlea();
         levelUrl();
+        console.log(soundUrl);
         sound.setAttribute('src', soundUrl);
         sound.play();
         // trackName ('gala',z);
