@@ -38,7 +38,7 @@ var tabLevel1 = [        // to stock 21 ID youtube tracks of level 1
 var tabLevel1_cover = [        // to stock cover ID of level 1
 'TI79P6_Jl3I',
 '7-Taz8WTqLk',
-'pyjt_G44MmQ',
+'wczW3GqXs9U',
 '-AZor70LmJ0',
 'I2mZgvl21X4',
 'kFMMQm-LCV4',
@@ -238,8 +238,8 @@ var tabLevel4_cover = [        // to stock 5 cover ID of level 4
 
 var tabLevel5 = [        // to stock 5 ID youtube tracks of level 5
 'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
+'assets/frogger3.mp3',
+'assets/frogger3.mp3',
 'assets/frogger3.mp3',
 'assets/frogger3.mp3'
 ];
@@ -587,6 +587,7 @@ function win() {
         trackCover(idCover);
     }    
 }
+
 function levelUrl() {
     var soundLevel = game.level;
     if (soundLevel == 2) {
