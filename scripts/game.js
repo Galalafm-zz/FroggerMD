@@ -253,49 +253,72 @@ var tabLevel4 = [        // to stock 5 ID youtube tracks of level 4
 'vz32qKNafns',
 'tYm1gR7zprg',
 'c4f7GtBR3RM',
-'ABNn7aC8UtI'
+'ABNn7aC8UtI',
+'c8R-420Yt2U'
 ];
 
 var tabLevel4_cover = [        // to stock 5 cover ID of level 4
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3'
+'c8R-420Yt2U',
+'vz32qKNafns',
+'tYm1gR7zprg',
+'c4f7GtBR3RM',
+'ABNn7aC8UtI',
+'c8R-420Yt2U'
 ];
 
 var tabLevel4_track = [        // to stock TRACK name of level 2
 'Mistral (Stephan Bodzin Remix)',
 'Cesio (Someone Outside Remix)',
 'Norrland',
-'Kiasmos - Burnt',
-'ABNn7aC8UtI'
+'Burnt',
+'Irminsul le pilier du monde',
+'Mistral (Stephan Bodzin Remix)'
 ];
 
 var tabLevel4_artist = [        // to stock ARTIST name of level 2
 'Rodriguez Jr.',
 'Aquiver & Darse',
 'Gidge',
-'c4f7GtBR3RM',
-'ABNn7aC8UtI'
+'Kiasmos',
+'Damabiah',
+'Rodriguez Jr.'
 ];
 
-var tabLevel5 = [        // to stock 5 ID youtube tracks of level 5
-'iUPKfwDLo5E',
+var tabLevel5 = [        // to stock 6 ID youtube tracks of level 5
 'VZI_nTnZghk',
+'iUPKfwDLo5E',
 '9JZSN-gmEyc',
 'AAdGGLIxrwM',
-'fMIoRU6zeeg'
+'fMIoRU6zeeg',
+'VZI_nTnZghk'
 ];
 
-var tabLevel5_cover = [        // to stock 5 cover ID of level 5
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3'
+var tabLevel5_cover = [        // to stock 6 ID youtube tracks of level 5
+'VZI_nTnZghk',
+'iUPKfwDLo5E',
+'9JZSN-gmEyc',
+'AAdGGLIxrwM',
+'fMIoRU6zeeg',
+'VZI_nTnZghk'
 ];
 
+var tabLevel5_track = [        // to stock TRACK name of level 2
+'Pandore',
+'The Infamous (Robytek Vs Shield Cut)',
+'Les violons ivres',
+'Tout est Magnifique',
+'Hawaii oh oui',
+'Pandore'
+];
+
+var tabLevel5_artist = [        // to stock ARTIST name of level 2
+'Idioma',
+'Butch & C.Vogt',
+'Agoria',
+'Jacques',
+'Romain Play',
+'Idioma'
+];
 
 function start_game() {
     game = new Game();
@@ -626,7 +649,6 @@ function win() {
         soundAlea();
         levelUrl();
         iframe(idYT);
-        drawSong();
     // }    
 }
 
@@ -634,10 +656,10 @@ function drawSong() {
     song = document.createElement("li");
     song.setAttribute('class', 'song');
     song.style.border = '1px solid red';
-    document.getElementById('playlist').appendChild(song); 
+    document.getElementById('playlist').appendChild(song);
+    trackCover(idCover);
     trackName(track);
     trackArtist(artist);
-    trackCover(idCover);
 }
 
 function levelUrl() {
@@ -756,6 +778,7 @@ function make_log(row, x, len) {
  *   1: medium
  *   2: small
  */
+
 var models = [{width: 30, height: 22, dir: 1}, {width: 29, height: 24, dir: -1}, {width:24, height: 26, dir: 1}, {width: 24, height: 21, dir: -1}, {width: 46, height: 19, dir: 1}];
 function Car(x, y, lane, speed, model) {
     this.posX = x;
@@ -766,7 +789,12 @@ function Car(x, y, lane, speed, model) {
     this.width = models[model].width;
     this.height = models[model].height;
     this.move = function() {
-        this.posX = this.posX - (models[model].dir * this.speed * game.level);
+        if (game.level == 1) {
+            this.posX = this.posX - (models[model].dir * this.speed * game.level);
+        }
+        else {
+            this.posX = this.posX - (models[model].dir * this.speed * (game.level/1.2));
+        }
     }
     this.draw = function() {
         switch(this.model) {
@@ -850,16 +878,22 @@ function Game() {
     }
 }
 // initialize playlist
+function trackCover (idCover) {
+    lastSong = playlist.lastChild;
+    console.log(lastSong);
+    lastSong.innerHTML = '<div class="view"><img alt="Pochette de l\'album" src="'+idCover+'"></div>';
+}
+
 function trackName (track) {
-    document.querySelector('.song').innerHTML = '<p class="name">'+track+'</p>';
+    lastSong = playlist.lastChild;
+    console.log(lastSong);
+    lastSong.innerHTML += '<div class="name"><p>'+track+'</p></div>';
 }
 
 function trackArtist (artist) {
-    document.querySelector('.song').innerHTML += '<div class="artist"><p>'+artist+'</p></div>';
-}
-
-function trackCover (idCover) {
-    document.querySelector('.song').innerHTML += '<div class="view"><img alt="Pochette de l\'album" src="'+idCover+'"></div>';
+    lastSong = playlist.lastChild;
+    console.log(lastSong);
+    lastSong.innerHTML += '<div class="artist"><p>'+artist+'</p></div>';
 }
 
 // initialize iframe

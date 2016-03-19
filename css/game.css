@@ -104,11 +104,6 @@ body {
 	padding:0;
 }
 
-#playlist li {
-	padding:0;
-	margin:0;
-}
-
 .title{
 	margin:auto;
 	text-align: center;
@@ -118,8 +113,9 @@ body {
 
 .title p{
 	font-size:25px;
-	font-family: 'Arial' ;
-	font-weight: lighter;
+	font-family: 'Montserrat' ;
+	font-weight: 400;
+	/*text-transform:uppercase;*/
 }
 
 .under-line2{
@@ -132,13 +128,23 @@ body {
 
 }
 
-.song{
-	display: block;
+#playlist li{
+	display: inline-block;
+	background-color: #062330;
+	width:90%;
+	margin-left:50px;
+}
+
+.song div {
+	color:white;
+	padding-left: 20px;
+	border:1px solid yellow;
 }
 
 .view{
-	margin-left: 20px;
-	display: inline-block;
+	float:left;
+	height:190px;
+	width:190px;
 }
 
 .view img{
@@ -146,9 +152,7 @@ body {
 	height:150px;
 }
 
-.description{
-	display: inline-block;
-	margin-left: 20px;
+.name, .artist{
 	color:white;
 	margin-top: 50px;
 }
