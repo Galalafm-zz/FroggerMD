@@ -1,0 +1,70 @@
+body {
+	font-family:Helvetica,Arial;
+	font-size:14px;
+	background: url('../images/bck2.png');
+	background-size: cover;
+}
+
+.title{
+	margin:auto;
+	text-align: center;
+}
+
+.title p{
+	font-size: 75px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 70px;
+    color: #02ca97;
+    font-weight: bold;
+}
+
+.sub-title{
+	margin:auto;
+	text-align: center;
+}
+
+.sub-title p{
+	font-size: 53px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -7px;
+	color: #839299;
+	font-weight: bold;
+}
+
+.play{
+	margin:auto;
+	text-align:center;
+	width: 250px;
+	height: 50px;
+	background-color: #002331;
+	border:1px solid #02ca97;
+	margin-top: 154px;
+	cursor: pointeur;	
+}
+
+.play:hover{
+	background-color: #02ca97;
+	border:1px solid #002331;
+	cursor: pointer;
+	color:#002331;
+
+}
+
+.play a{
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	color: #02ca97;
+	font-weight: bold;
+	text-align: center;
+	margin-top:10px;
+	text-decoration: none;
+	line-height:50px;
+}
+
+.play a:hover{
+	color:#002331;
+}
+

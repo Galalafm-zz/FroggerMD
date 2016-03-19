@@ -1,0 +1,172 @@
+@font-face {
+	font-family: 'montserrat';
+	src: url(assets/montserrat-regular.ttf);
+}
+
+canvas {
+    padding: 5px;
+    margin: 10px;
+    border-width: 5px;
+    border-color: #34CA97;
+    border-style: solid;
+    margin-top:-25px;
+}
+
+body {
+    background-color: #022331;
+    background:#002331;
+	font-family:Helvetica,Arial;
+	font-size:14px;
+	font-family:'Montserrat', sans-serif;
+}
+
+.logo{
+	color: white;
+	margin-left: 20px;
+	margin-top:20px;
+	display: inline-block;
+}
+
+.game {
+	width:399px;
+	height:545px;
+	display: inline-block;
+	margin:auto;
+	position: absolute;
+	top:40px;
+	left:200px;
+	text-align: center;
+}
+
+.items{
+	float:right;
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.items ul{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.items li{
+	display: inline-block;
+	color: white;
+	font-size: 12px;
+	font-weight: 400;
+	margin-right: 20px;
+}
+
+.items li a:hover{
+	color:#00c99b;
+}
+
+.items a{
+	text-decoration: none;
+	color:white;
+}
+
+.music{
+	width: 350px;
+    height: 400px;
+    float: right;
+    margin-top: 100px;
+    margin-right: -200px;
+    text-align: center;
+    color: white;
+}
+
+.under-line{
+	width:200px;
+	height: 3px;
+	background-color:#00c99b;
+	margin:auto;
+	text-align: center;
+
+}
+
+.cover img{
+	width:350px;
+	height:350px;
+}
+
+#container3{
+	width:75%;
+	margin:auto;
+	height:600px;
+	position: relative;
+	background-color: #012837;
+	margin-top: 600px;
+}
+
+#playlist {
+	border: 2px solid green;
+	padding:0;
+}
+
+#playlist li {
+	padding:0;
+	margin:0;
+}
+
+.title{
+	margin:auto;
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+}
+
+.title p{
+	font-size:25px;
+	font-family: 'Arial' ;
+	font-weight: lighter;
+}
+
+.under-line2{
+	margin-top:10px;
+	width:500px;
+	height: 3px;
+	background-color:#00c99b;
+	margin:auto;
+	text-align: center;
+
+}
+
+.song{
+	display: block;
+}
+
+.view{
+	margin-left: 20px;
+	display: inline-block;
+}
+
+.view img{
+	width:150px;
+	height:150px;
+}
+
+.description{
+	display: inline-block;
+	margin-left: 20px;
+	color:white;
+	margin-top: 50px;
+}
+
+.share{
+	display: inline-block;
+	float: right;
+	margin-right:20px;
+	color:white;
+}
+
+.social img{
+	width:20px;
+	height:20px;
+	margin-left: 5px;
+}
+
+.song2{
+	display: block;
+	margin-top:50px;
+}

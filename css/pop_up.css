@@ -1,0 +1,48 @@
+body {
+	background:#002331;
+	font-family:Helvetica,Arial;
+	font-size:14px;
+	font-family:'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.container{
+	width:75%;
+
+}
+
+.title{
+	margin:auto;
+	text-align: center;
+}
+
+.title p{
+	color:white;
+	font-size: 25px;
+}
+
+.username{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.username p{
+	font-size: 13px;
+	margin-bottom: 10px;
+	color:white;
+}
+
+.password{
+	display: block;
+	margin-bottom: 30px;
+}
+
+.password p{
+	font-size: 13px;
+	margin-bottom: 10px;
+	color:white;
+}

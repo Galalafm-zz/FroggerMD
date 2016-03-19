@@ -130,8 +130,8 @@ var tabLevel2 = [        // to stock 16 tracks of level 2
 'xiJVYJwuCic',
 '4aSfIpzlGpQ',
 'Go14fQGV8Zw',
-'NOGWipcBlRE',
-'dbqobhOQ8qY',
+'cr4bsdoZKxQ',
+'IX-Ca9pe3vc',
 '-hrWHQ1Yxlo'
 ];
 
@@ -149,53 +149,53 @@ var tabLevel2_cover = [        // to stock cover ID of level 2 PAS FAIT
 'xiJVYJwuCic',
 '4aSfIpzlGpQ',
 'Go14fQGV8Zw',
-'NOGWipcBlRE',
-'dbqobhOQ8qY',
+'cr4bsdoZKxQ',
+'IX-Ca9pe3vc',
 '-hrWHQ1Yxlo'
 ];
 
-var tabLevel2_track = [        // to stock track name of level 2
+var tabLevel2_track = [        // to stock TRACK name of level 2
+'Machine (John Talabot\'s Synthedit)',
+'Another earth',
+'Silent Space',
 'Eurasia (Gui\'s Version)',
-'C0pACItGzpQ',
-'G8uDFn-8ZXg',
-'zI6fUMX6uKI',
-'jqAXq-UAmys',
-'KtoBDBAY6Z4',
-'isSuEYFjiFk',
-'0wvxnaQ5cbs',
-'xiNsu6BCRu8',
-'LO-p0got1vM',
-'xiJVYJwuCic',
-'4aSfIpzlGpQ',
-'Go14fQGV8Zw',
-'NOGWipcBlRE',
-'dbqobhOQ8qY',
-'-hrWHQ1Yxlo'
+'Ripe Traxx',
+'Your Love',
+'Boston',
+'Concrete Groove',
+'Luv Dancin\'',
+'Inapropriate',
+'Bonita',
+'The Break Up |Heist Recordings|',
+'Tranquilizer',
+'Thrown',
+'88888888',
+'Machine (John Talabot\'s Synthedit)'
 ];
 
-var tabLevel2_artist = [        // to stock artist name of level 2
-'Eurasia (Gui\'s Version)',
-'C0pACItGzpQ',
-'G8uDFn-8ZXg',
-'zI6fUMX6uKI',
-'jqAXq-UAmys',
-'KtoBDBAY6Z4',
-'isSuEYFjiFk',
-'0wvxnaQ5cbs',
-'xiNsu6BCRu8',
-'LO-p0got1vM',
-'xiJVYJwuCic',
-'4aSfIpzlGpQ',
-'Go14fQGV8Zw',
-'NOGWipcBlRE',
-'dbqobhOQ8qY',
-'-hrWHQ1Yxlo'
+var tabLevel2_artist = [        // to stock ARTIST name of level 2
+'John Talabot',
+'Tale of Us',
+'Tale of US',
+'Marc Romboy & Gui Boratto',
+'Mella Dee',
+'Richy Ahmed',
+'Detroit Swindle',
+'De Sluwe Vos',
+'THE UNDERGROUND SOLUTION',
+'Siler & Dima, Thomas Zander',
+'Philip Bader',
+'Detroit Swindle',
+'Jamie Jones',
+'Kiasmos',
+'Flavien Berger',
+'John Talabot'
 ];
  
 var tabLevel3 = [        // to stock 11 ID youtube tracks of level 3
 'vpOOQuV3S0U',
 'ddnQl1QZCjg',
-'yq8rkO_y3js',
+'-ht9O-z52Pg',
 '66d2E6B5Yx0',
 'GBA_mQQ31iU',
 'IejqrcG41UU',
@@ -209,7 +209,7 @@ var tabLevel3 = [        // to stock 11 ID youtube tracks of level 3
 var tabLevel3_cover = [        // to stock 11 cover ID of level 3
 'vpOOQuV3S0U',
 'ddnQl1QZCjg',
-'yq8rkO_y3js',
+'-ht9O-z52Pg',
 '66d2E6B5Yx0',
 'GBA_mQQ31iU',
 'IejqrcG41UU',
@@ -220,12 +220,40 @@ var tabLevel3_cover = [        // to stock 11 cover ID of level 3
 'vpOOQuV3S0U'
 ];
 
+var tabLevel3_track = [        // to stock TRACK name of level 2
+'Caminho De Dreyfus (Marc Houle Remix)',
+'Hot In The Fridge',
+'Le Troublant Acid',
+'Goingbackeast',
+'J.B.Y.',
+'Mind (Reprise)',
+'Galaxy - Leena050',
+'Horizons',
+'Moonland (Barnt Remix)',
+'Try (Original Mix)',
+'Caminho De Dreyfus (Marc Houle Remix)'
+];
+
+var tabLevel3_artist = [        // to stock ARTIST name of level 2
+'Red Axes feat. Abrão',
+'Daniel Bortz',
+'KZA',
+'Domenico Rosa',
+'David August',
+'VIMES',
+'Artifact',
+'Autograf',
+'Dream Weapons',
+'Monoloc',
+'Red Axes feat. Abrão'
+];
+
 var tabLevel4 = [        // to stock 5 ID youtube tracks of level 4
 'c8R-420Yt2U',
 'vz32qKNafns',
-'assets/frogger.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3'
+'tYm1gR7zprg',
+'c4f7GtBR3RM',
+'ABNn7aC8UtI'
 ];
 
 var tabLevel4_cover = [        // to stock 5 cover ID of level 4
@@ -236,12 +264,28 @@ var tabLevel4_cover = [        // to stock 5 cover ID of level 4
 'assets/frogger3.mp3'
 ];
 
+var tabLevel4_track = [        // to stock TRACK name of level 2
+'Mistral (Stephan Bodzin Remix)',
+'Cesio (Someone Outside Remix)',
+'Norrland',
+'Kiasmos - Burnt',
+'ABNn7aC8UtI'
+];
+
+var tabLevel4_artist = [        // to stock ARTIST name of level 2
+'Rodriguez Jr.',
+'Aquiver & Darse',
+'Gidge',
+'c4f7GtBR3RM',
+'ABNn7aC8UtI'
+];
+
 var tabLevel5 = [        // to stock 5 ID youtube tracks of level 5
-'assets/frogger.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3',
-'assets/frogger3.mp3'
+'iUPKfwDLo5E',
+'VZI_nTnZghk',
+'9JZSN-gmEyc',
+'AAdGGLIxrwM',
+'fMIoRU6zeeg'
 ];
 
 var tabLevel5_cover = [        // to stock 5 cover ID of level 5
@@ -289,30 +333,30 @@ function start_game() {
         draw_frog();
         setInterval(game_loop, 50);
         soundAlea(); // determine nombre aléatoire 
-        // sound.setAttribute('src', soundL1);
-        // sound.setAttribute('loop', 'true');
         iframe(idYT);
-        // sound.play();
+        writeLevel();
     }
 }
 
 function restart() {
-    game = new Game();
-    game_loop();
-    soundAlea(); // determine nombre aléatoire 
-    iframe(idYT);
+    // game = new Game();
+    // game_loop();
+    // soundAlea(); // determine nombre aléatoire 
+    // iframe(idYT);
+    // writeLevel();
+    win();
 }
 
 function soundAlea() {
     if (game.level == 1) {
-        i = Math.ceil(Math.random()*21);
+        i = Math.ceil(Math.random()*20);
         soundL1 = tabLevel1[i];
         artist = tabLevel1_artist[i];
         track = tabLevel1_track[i];
         idCover = tabLevel1_cover[i];
     }
     else if (game.level == 2) {
-        i = Math.ceil(Math.random()*16);
+        i = Math.ceil(Math.random()*15);
         soundL2 = tabLevel2[i];
         console.log(i, soundL2);
         artist = tabLevel2_artist[i];
@@ -320,7 +364,7 @@ function soundAlea() {
         idCover = tabLevel2_cover[i];
     }
     else if (game.level == 3) {
-        i = Math.ceil(Math.random()*11);
+        i = Math.ceil(Math.random()*10);
         soundL3 = tabLevel3[i];
         artist = tabLevel3_artist[i];
         track = tabLevel3_track[i];
@@ -575,17 +619,25 @@ function check_win() {
 function win() {
     game.score += 50;
     game.win = 15;
-    if(game.won[0] && game.won[1] && game.won[2] && game.won[3] && game.won[4]){
+    // if(game.won[0] && game.won[1] && game.won[2] && game.won[3] && game.won[4]){
         level();
+        writeLevel();
+        drawSong();
         soundAlea();
         levelUrl();
-        console.log(soundUrl);
         iframe(idYT);
-        console.log(artist, track, idCover);
-        trackName(track);
-        trackArtist(artist);
-        trackCover(idCover);
-    }    
+        drawSong();
+    // }    
+}
+
+function drawSong() {
+    song = document.createElement("li");
+    song.setAttribute('class', 'song');
+    song.style.border = '1px solid red';
+    document.getElementById('playlist').appendChild(song); 
+    trackName(track);
+    trackArtist(artist);
+    trackCover(idCover);
 }
 
 function levelUrl() {
@@ -798,16 +850,16 @@ function Game() {
     }
 }
 // initialize playlist
-function trackName (track){
-    document.getElementById('track').innerText = track;
+function trackName (track) {
+    document.querySelector('.song').innerHTML = '<p class="name">'+track+'</p>';
 }
 
-function trackArtist (artist){
-    document.getElementById('artist').innerText = artist;
+function trackArtist (artist) {
+    document.querySelector('.song').innerHTML += '<div class="artist"><p>'+artist+'</p></div>';
 }
 
-function trackCover (idCover){
-    document.getElementById('cover').innerHTML = '<img alt="Pochette de l\'album" src="assets/"'+idCover+'>';
+function trackCover (idCover) {
+    document.querySelector('.song').innerHTML += '<div class="view"><img alt="Pochette de l\'album" src="'+idCover+'"></div>';
 }
 
 // initialize iframe
@@ -820,4 +872,9 @@ function iframe(idYT) {
     }
     console.log(idYT);
     document.getElementById('player').innerHTML = '<iframe width="0" height="0" src="https://www.youtube.com/embed/'+ idYT +'?rel=0&amp;autoplay=1"'+' frameborder="0"></iframe>';
+}
+
+// initialize level div
+function writeLevel () {
+    document.getElementById('level').innerHTML = '<h2>Niveau '+game.level+'</h2>';
 }
