@@ -9,7 +9,7 @@ canvas {
     border-width: 5px;
     border-color: #34CA97;
     border-style: solid;
-    margin-top:-25px;
+    margin-top:-10px;
 }
 
 body {
@@ -68,7 +68,7 @@ body {
 
 .music{
 	width: 350px;
-    height: 400px;
+    height: 500px;
     float: right;
     margin-top: 100px;
     margin-right: -200px;
@@ -78,11 +78,18 @@ body {
 
 .under-line{
 	width:200px;
-	height: 3px;
-	background-color:#00c99b;
+	height: 50px;
+	border-top: 3px solid #00c99b;
+	background-color:#072836;
 	margin:auto;
 	text-align: center;
 
+}
+
+#level h2 {
+	padding: 0;
+	margin:0;
+	padding-top: 12px;
 }
 
 .cover img{
@@ -90,17 +97,40 @@ body {
 	height:350px;
 }
 
+.text {
+	color:white;
+	margin-top: 50px;
+	font-size: 12px;
+}
+
+.text img{
+	width:20px;
+	height: 20px;
+	transform:rotate(-90deg);
+	margin-top: 3px;
+}
+
+.arrow{
+	display: inline-block;
+}
+
+.arrow img{
+	width:20px;
+	height:20px;
+	transform:rotate(-90deg);
+	margin-top: 0px;
+	color:white;
+}
+
 #container3{
 	width:75%;
 	margin:auto;
-	height:600px;
 	position: relative;
 	background-color: #012837;
 	margin-top: 600px;
 }
 
 #playlist {
-	border: 2px solid green;
 	padding:0;
 }
 
@@ -133,11 +163,11 @@ body {
 	background-color: #062330;
 	width:90%;
 	margin-left:45px;
+	margin-top: 5px;
 }
 
 .song div {
 	color:white;
-	border:1px solid yellow;
 }
 
 .view{
@@ -152,19 +182,28 @@ body {
 }
 
 .name, .artist{
-	color:white;
 	font-family: 'montserrat-regular';
-	margin-top: 30px;
-	margin-left: 200px;
+	margin-top: 50px;
+	font-size: 16px;
+	font-weight: 200;
+	margin-left: 230px;
 }
 
 .name {
 	font-style: italic;
 }
 
+#msg {
+	color:#B2B2B2;
+	margin:auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
 #share {
 	width: 29%;
 	margin:auto;
+	margin-top: 20px;
 }
 
 .share-song {

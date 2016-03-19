@@ -358,6 +358,7 @@ function start_game() {
         soundAlea(); // determine nombre aléatoire 
         iframe(idYT);
         writeLevel();
+        document.getElementById('share').style.visibility='hidden';
     }
 }
 
@@ -646,16 +647,18 @@ function win() {
         level();
         writeLevel();
         drawSong();
+        document.getElementById('share').style.visibility='visible';
         soundAlea();
         levelUrl();
         iframe(idYT);
+        var msg = document.getElementById('msg');
+        document.getElementById('container3').removeChild(msg);
     // }    
 }
 
 function drawSong() {
     song = document.createElement("li");
     song.setAttribute('class', 'song');
-    song.style.border = '1px solid red';
     document.getElementById('playlist').appendChild(song);
     trackCover(idCover);
     trackName(track);
@@ -887,13 +890,13 @@ function trackCover (idCover) {
 function trackName (track) {
     lastSong = playlist.lastChild;
     console.log(lastSong);
-    lastSong.innerHTML += '<div class="name"><p>'+track+'</p></div>';
+    lastSong.innerHTML += '<div class="name"><p style="color:#B2B2B2">'+track+'</p></div>';
 }
 
 function trackArtist (artist) {
     lastSong = playlist.lastChild;
     console.log(lastSong);
-    lastSong.innerHTML += '<div class="artist"><p>'+artist+'</p></div>';
+    lastSong.innerHTML += '<div class="artist"><p style="color:#B2B2B2">'+artist+'</p></div>';
 }
 
 // initialize iframe
