@@ -358,6 +358,7 @@ function start_game() {
         soundAlea(); // determine nombre aléatoire 
         iframe(idYT);
         writeLevel();
+        document.getElementById('share').style.visibility='hidden';
     }
 }
 
@@ -646,6 +647,7 @@ function win() {
         level();
         writeLevel();
         drawSong();
+        document.getElementById('share').style.visibility='visible';
         soundAlea();
         levelUrl();
         iframe(idYT);
@@ -912,3 +914,4 @@ function iframe(idYT) {
 function writeLevel () {
     document.getElementById('level').innerHTML = '<h2>Niveau '+game.level+'</h2>';
 }
+
