@@ -10,6 +10,7 @@ canvas {
     border-color: #34CA97;
     border-style: solid;
     margin-top:-10px;
+    margin-left:-30px;
 }
 
 body {
@@ -20,11 +21,13 @@ body {
 	font-family:'Montserrat', sans-serif;
 }
 
-.logo{
-	color: white;
-	margin-left: 20px;
-	margin-top:20px;
+.logo {
+	color: #062330;
+	margin-left: 0;
+	width: 150px;
+	height:30px;
 	display: inline-block;
+	text-align: center;
 }
 
 .game {
@@ -89,10 +92,18 @@ body {
 #level h2 {
 	padding: 0;
 	margin:0;
+	font-size: 12pt;
+	font-family: "montserrat-regular";
 	padding-top: 12px;
 }
 
-.cover img{
+#cover img{
+	width:350px;
+	height:350px;
+}
+
+#cover {
+	background: url(../images/mystere.png);
 	width:350px;
 	height:350px;
 }
@@ -127,7 +138,7 @@ body {
 	margin:auto;
 	position: relative;
 	background-color: #012837;
-	margin-top: 600px;
+	margin-top: 650px;
 }
 
 #playlist {

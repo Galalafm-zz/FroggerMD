@@ -33,26 +33,14 @@ a{
 
 .logo{
 	float: left;
-	border:2px solid white;
-	margin-left: 50px;
+	margin-left:20px;
+	margin-top:20px;
 }
 
-.logo:hover{
-	border:2px solid #00c99b;
-	background: #00c99b;
-	cursor: pointer;
+.logo img {
+	width: 150px;
 }
 
-.logo p{
-	color:white;
-	font-size: 16px;
-	padding:5px;
-}
-
-.logo a{
-	text-decoration: none;
-	color:white;
-}
 
 .items{
 	float:right;
@@ -120,11 +108,10 @@ a{
 .sub-title2{
 	margin: auto;
 	text-align: center;
-
 }
 
 .sub-title2 p{
-	font-size: 33px;
+	font-size: 29px;
 	color: white;
 	font-weight: 100;
 }
@@ -132,12 +119,15 @@ a{
 .gender ul{
 	display: inline-block;
 	text-decoration: none;
+	background-color: #041B27;
+	width:87%;
 }
 
 .gender li{
 	display: inline-block;
 	text-decoration: none;
 	margin-right: 50px;
+	margin-top: 30px;
 
 }
 
@@ -149,34 +139,6 @@ a{
 }
 
 .gender img{
-	width:220px;
-	height:220px;
-}
-
-.gender2{
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.gender2 ul{
-	display: inline-block;
-	text-decoration: none;
-}
-
-.gender2 li{
-	display: inline-block;
-	text-decoration: none;
-	margin-right: 50px;
-}
-
-.gender2 li:hover{
-	border:7px solid #00c99b;
-	width: 220px;
-	height: 220px;
-	transition-duration: 0.3s;
-}
-
-.gender2 img{
 	width:220px;
 	height:220px;
 }

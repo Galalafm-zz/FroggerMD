@@ -56,9 +56,6 @@ var tabLevel1_cover = [        // to stock cover ID of level 1
 'https://www.residentadvisor.net/images/reviews/2014/rms001-guygerberdixon.jpg',
 'http://i.imgur.com/RkfUp27.jpg',
 'http://images.junostatic.com/full/CS2935147-02A-BIG.jpg',
-'https://farm9.staticflickr.com/8729/16792419208_38cc9406e9_o_d.jpg',
-'http://1.bp.blogspot.com/-5RV6hLBhgZ4/UWuySZkB29I/AAAAAAAAAPo/P5hEqsyN9yc/s1600/533419_586869297998154_410433523_n.jpg',
-'https://d1wtzzt4oxg683.cloudfront.net/images/covers/large/49/156049.jpg',
 'https://i1.sndcdn.com/artworks-000108455053-eru97e-t500x500.jpg', // same que tab[0]
 ];
 
@@ -83,9 +80,6 @@ var tabLevel1_track = [        // to stock track name of level 1
 'No Distance (Lake People Remix)',
 'Work (Marcel Dettmann Remix)',
 'Aches [Studio Barnhaus]',
-'Machine (John Talabot\'s Synthedit)',
-'Another earth',
-'Silent Space',
 'Timing (Original Mix)', // same que tab[0]
 ];
 
@@ -110,9 +104,6 @@ var tabLevel1_artist = [        // to stock artist name of level 1
 'Guy Gerber & Dixon',
 'Junior Boys',
 'Baba Stiltz',
-'John Talabot',
-'Tale of Us',
-'Tale of Us',
 'Guy Gerber', // same que tab[0]
 ];
 
@@ -136,22 +127,22 @@ var tabLevel2 = [        // to stock 16 tracks of level 2
 ];
 
 var tabLevel2_cover = [        // to stock cover ID of level 2 PAS FAIT
-'-hrWHQ1Yxlo',
-'C0pACItGzpQ',
-'G8uDFn-8ZXg',
-'zI6fUMX6uKI',
-'jqAXq-UAmys',
-'KtoBDBAY6Z4',
-'isSuEYFjiFk',
-'0wvxnaQ5cbs',
-'xiNsu6BCRu8',
-'LO-p0got1vM',
-'xiJVYJwuCic',
-'4aSfIpzlGpQ',
-'Go14fQGV8Zw',
-'cr4bsdoZKxQ',
-'IX-Ca9pe3vc',
-'-hrWHQ1Yxlo'
+'http://www.technique.co.jp:88/photo/img/201504/PHILOMENA11_1.JPG',
+'http://1.bp.blogspot.com/-5RV6hLBhgZ4/UWuySZkB29I/AAAAAAAAAPo/P5hEqsyN9yc/s1600/533419_586869297998154_410433523_n.jpg',
+'https://d1wtzzt4oxg683.cloudfront.net/images/covers/large/49/156049.jpg',
+'https://www.residentadvisor.net/images/reviews/2007/marcromboyvsguiboratto-eurasia.jpg',
+'https://i1.sndcdn.com/artworks-000060661922-197ysl-t300x300.jpg',
+'https://oedipepurple.files.wordpress.com/2013/08/800071003005.jpg',
+'https://i1.sndcdn.com/artworks-000025083141-pfj211-t500x500.jpg',
+'https://f1.bcbits.com/img/a1930666487_16.jpg',
+'http://coconutsdisk.com/ekoda/wp-content/uploads/2015/03/20150328ekdp-7.jpg',
+'http://www.serendeepity.net/wp-content/uploads/SE03.jpg',
+'https://www.residentadvisor.net/images/cover/tr-148988.jpg',
+'http://www.deejay.de/images/xl/7/7/125777.jpg',
+'http://4.bp.blogspot.com/-izQe3BICrlA/TsGLNN_stAI/AAAAAAAACgo/pc8wKmIbtrc/s320/retro-32c40509f1ecc634856c6a5882558619_h.jpg',
+'http://www.futuresequence.com/Uploads/kiasmos-thrown-large.jpg',
+'https://i1.sndcdn.com/artworks-000113584214-oqd4de-t500x500.jpg',
+'http://www.technique.co.jp:88/photo/img/201504/PHILOMENA11_1.JPG'
 ];
 
 var tabLevel2_track = [        // to stock TRACK name of level 2
@@ -207,17 +198,17 @@ var tabLevel3 = [        // to stock 11 ID youtube tracks of level 3
 ];
 
 var tabLevel3_cover = [        // to stock 11 cover ID of level 3
-'vpOOQuV3S0U',
-'ddnQl1QZCjg',
-'-ht9O-z52Pg',
-'66d2E6B5Yx0',
-'GBA_mQQ31iU',
-'IejqrcG41UU',
-'Vq2SFsfWpX4',
-'EM50Oj6rz1k',
-'j3AVrxx3QoQ',
-'5olq3S8yVaE',
-'vpOOQuV3S0U'
+'http://blog1-30f8.kxcdn.com/wp-content/uploads/2013/06/Red-Axes-Caminho-De-Dreyfus-EP.jpg',
+'https://pp.vk.me/c628419/v628419639/6541/py8ECfkxWLo.jpg',
+'http://www.soul-kitchen.fr/wp/wp-content/uploads/2010/12/KZA-Le-Troublant-Acid.jpg',
+'https://cdn.discogs.com/Gk_D2vCTb0wPCBwRtpbtoyyojcE=/300x300/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5669713-1405079272-8177.jpeg.jpg',
+'https://i1.sndcdn.com/artworks-000149476692-uj0cum-t500x500.jpg',
+'http://s0.limitedrun.com/images/1166631/NighsInLimboRemix_600px.jpg',
+'https://i1.sndcdn.com/avatars-000003657742-sab9fp-t500x500.jpg',
+'http://www.catchthatbeat.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-08-at-10.32.03-am.png',
+'https://f1.bcbits.com/img/a3036727083_10.jpg',
+'http://hotreleases.me/wp-content/uploads/2012/11/6178163.jpg',
+'http://blog1-30f8.kxcdn.com/wp-content/uploads/2013/06/Red-Axes-Caminho-De-Dreyfus-EP.jpg'
 ];
 
 var tabLevel3_track = [        // to stock TRACK name of level 2
@@ -248,7 +239,7 @@ var tabLevel3_artist = [        // to stock ARTIST name of level 2
 'Red Axes feat. Abrão'
 ];
 
-var tabLevel4 = [        // to stock 5 ID youtube tracks of level 4
+var tabLevel4 = [        // to stock 6 ID youtube tracks of level 4
 'c8R-420Yt2U',
 'vz32qKNafns',
 'tYm1gR7zprg',
@@ -257,13 +248,13 @@ var tabLevel4 = [        // to stock 5 ID youtube tracks of level 4
 'c8R-420Yt2U'
 ];
 
-var tabLevel4_cover = [        // to stock 5 cover ID of level 4
-'c8R-420Yt2U',
-'vz32qKNafns',
-'tYm1gR7zprg',
-'c4f7GtBR3RM',
-'ABNn7aC8UtI',
-'c8R-420Yt2U'
+var tabLevel4_cover = [        // to stock 6 cover ID of level 4
+'https://i1.sndcdn.com/artworks-000148862234-1wt5dk-t500x500.jpg',
+'https://www.residentadvisor.net/images/cover/tr-733419.jpg',
+'http://www.portalsmusic.com/wp-content/uploads/2014/08/Gidge_Norrland.jpg',
+'https://soniscope.files.wordpress.com/2014/08/kiasmos-burnt.jpg',
+'https://i1.sndcdn.com/artworks-000008996660-s21v5t-t500x500.jpg',
+'https://i1.sndcdn.com/artworks-000148862234-1wt5dk-t500x500.jpg'
 ];
 
 var tabLevel4_track = [        // to stock TRACK name of level 2
@@ -294,12 +285,12 @@ var tabLevel5 = [        // to stock 6 ID youtube tracks of level 5
 ];
 
 var tabLevel5_cover = [        // to stock 6 ID youtube tracks of level 5
-'VZI_nTnZghk',
-'iUPKfwDLo5E',
-'9JZSN-gmEyc',
-'AAdGGLIxrwM',
-'fMIoRU6zeeg',
-'VZI_nTnZghk'
+'http://obviously.fr/wp-content/uploads/2014/10/COVER_Idioma-Pandore.jpg',
+'https://www.residentadvisor.net/images/cover/tr-630502.jpg',
+'http://payload159.cargocollective.com/1/6/201452/5489982/agoria-lvi.jpg',
+'http://www.tsugi.fr/sites/default/files/styles/article_full_normal_x1/public/capture_decran_2015-03-23_a_11.36.26.png?itok=3HJM3X87',
+'https://i1.sndcdn.com/artworks-000079977355-g936on-t500x500.jpg',
+'http://obviously.fr/wp-content/uploads/2014/10/COVER_Idioma-Pandore.jpg'
 ];
 
 var tabLevel5_track = [        // to stock TRACK name of level 2
@@ -357,8 +348,8 @@ function start_game() {
         setInterval(game_loop, 50);
         soundAlea(); // determine nombre aléatoire 
         iframe(idYT);
-        writeLevel();
         document.getElementById('share').style.visibility='hidden';
+        cover = document.getElementById('cover');
     }
 }
 
@@ -367,7 +358,6 @@ function restart() {
     // game_loop();
     // soundAlea(); // determine nombre aléatoire 
     // iframe(idYT);
-    // writeLevel();
     win();
 }
 
@@ -421,6 +411,11 @@ function game_loop() {
     else {
         game_over();
         document.getElementById('player').innerHTML = '#';
+        var canvas = document.getElementById('game');
+        canvas.addEventListener('click', function(){
+            restart();
+        })
+        // canvas.setAttribute('on')
     }
 }
 // drawing functions: bg, info, frogger, cars, logs, wins
@@ -644,15 +639,16 @@ function win() {
     game.score += 50;
     game.win = 15;
     // if(game.won[0] && game.won[1] && game.won[2] && game.won[3] && game.won[4]){
+        cover.innerHTML = '<img src="'+idCover+'">';
         level();
-        writeLevel();
         drawSong();
         document.getElementById('share').style.visibility='visible';
         soundAlea();
         levelUrl();
         iframe(idYT);
-        var msg = document.getElementById('msg');
-        document.getElementById('container3').removeChild(msg);
+        var enfant = document.getElementById('msg');
+        var parent = document.getElementById('container3');
+        parent.removeChild(enfant);
     // }    
 }
 
@@ -885,6 +881,8 @@ function trackCover (idCover) {
     lastSong = playlist.lastChild;
     console.log(lastSong);
     lastSong.innerHTML = '<div class="view"><img alt="Pochette de l\'album" src="'+idCover+'"></div>';
+
+    document.getElementById('cover').innerHTML = '<img src="'+idCover+'">';
 }
 
 function trackName (track) {
@@ -911,7 +909,9 @@ function iframe(idYT) {
     document.getElementById('player').innerHTML = '<iframe width="0" height="0" src="https://www.youtube.com/embed/'+ idYT +'?rel=0&amp;autoplay=1"'+' frameborder="0"></iframe>';
 }
 
+
+
 // initialize level div
-function writeLevel () {
-    document.getElementById('level').innerHTML = '<h2>Niveau '+game.level+'</h2>';
-}
+// function writeLevel () {
+//     document.getElementById('level').innerHTML = '<h2>Niveau '+game.level+'</h2>';
+// }
