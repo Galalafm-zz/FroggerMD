@@ -36,30 +36,30 @@ var tabLevel1 = [        // to stock 21 ID youtube tracks of level 1
 ];
 
 var tabLevel1_cover = [        // to stock cover ID of level 1
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi1.sndcdn.com%2Fartworks-000108455053-eru97e-t500x500.jpg&imgrefurl=https%3A%2F%2Fsoundcloud.com%2Fcorrosive_luvv%2Fguy-gerber-timing-original-mix&h=500&w=500&tbnid=HpgC7QV_8oHqiM%3A&docid=gh2vJXrT9FeivM&ei=6ILtVrO0CYTaaqT9sMgG&tbm=isch&iact=rc&uact=3&dur=4570&page=1&start=0&ndsp=40&ved=0ahUKEwizyOuVms3LAhUErRoKHaQ-DGkQrQMIOTAJ',
-'http://images.google.fr/imgres?imgurl=http%3A%2F%2Fis1.mzstatic.com%2Fimage%2Fthumb%2FMusic6%2Fv4%2Fcd%2F95%2Fcc%2Fcd95cc01-2f21-ea9c-6075-1cff17a669c4%2Fsource%2F300x300bb.jpg&imgrefurl=http%3A%2F%2Fzippyhit.com%2Fegbert-korrelig-original-mix-NVuB&h=300&w=300&tbnid=BFaPL6_r3rr7KM%3A&docid=Pkaw-EHrH4LR1M&itg=1&ei=SIPtVpvhB8G9abyCuagD&tbm=isch&iact=rc&uact=3&dur=247&page=1&start=0&ndsp=42&ved=0ahUKEwibpc3Dms3LAhXBXhoKHTxBDjUQrQMIHTAA',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fapi-media.beatport.com%2F240x240%2Fsounds%2Fkwfn7j2es2g7%2F1440435106.jpg&imgrefurl=https%3A%2F%2Fwww.beatport.com%2Fmazzingarecordsofficial%2Ftracks%2Fkwfn7j2es2g7%2Fanalog-room-alberto-ruiz-remix&h=240&w=240&tbnid=csmFfH5FyQ9B_M%3A&docid=xkTJxDp7h2WznM&itg=1&ei=kIPtVprLB4apa_PEszg&tbm=isch&iact=rc&uact=3&dur=378&page=1&start=0&ndsp=43&ved=0ahUKEwia0_flms3LAhWG1BoKHXPiDAcQrQMIITAB',
-'http://images.google.fr/imgres?imgurl=http%3A%2F%2Fimages.shazam.com%2Fcoverart%2Ft113754291-i834648203_s400.jpg&imgrefurl=http%3A%2F%2Fwww.shazam.com%2Ftrack%2F113754291%2Ftake-me-to-your-paradise&h=400&w=400&tbnid=yOzGTH1BWvkoGM%3A&docid=PLhP14XRifd-SM&ei=sIPtVsaPEcTvaq2QhKAO&tbm=isch&iact=rc&uact=3&dur=205&page=1&start=0&ndsp=40&ved=0ahUKEwjGp6L1ms3LAhXEtxoKHS0IAeQQrQMIJzAD',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fpp.vk.me%2Fc633119%2Fv633119921%2Fc5ec%2Fl2m-_d0m9n0.jpg&imgrefurl=https%3A%2F%2Fvk.com%2Fwall-51361027%3Foffset%3D120&h=500&w=500&tbnid=sqID96j25QD9oM%3A&docid=d63xF9avlbXEoM&ei=P4TtVpvGHYynaOr5rrAI&tbm=isch&iact=rc&uact=3&dur=366&page=1&start=0&ndsp=44&ved=0ahUKEwjb4ca5m83LAhWMExoKHeq8C4YQrQMIPjAL',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fpp.vk.me%2Fc633119%2Fv633119921%2Fc5ec%2Fl2m-_d0m9n0.jpg&imgrefurl=https%3A%2F%2Fvk.com%2Fwall-51361027%3Foffset%3D120&h=500&w=500&tbnid=sqID96j25QD9oM%3A&docid=d63xF9avlbXEoM&ei=P4TtVpvGHYynaOr5rrAI&tbm=isch&iact=rc&uact=3&dur=366&page=1&start=0&ndsp=44&ved=0ahUKEwjb4ca5m83LAhWMExoKHeq8C4YQrQMIPjAL',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FHSD303pGFRA%2Fhqdefault.jpg&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHSD303pGFRA&h=360&w=480&tbnid=5GJKgOnm-ee_4M%3A&docid=2DXnzrPUw7xOkM&ei=EIntVor3NsXaas7WkYgO&tbm=isch&iact=rc&uact=3&dur=274&page=1&start=0&ndsp=40&ved=0ahUKEwiKv9iFoM3LAhVFrRoKHU5rBOEQrQMIHjAA',
-'http://images.google.fr/imgres?imgurl=http%3A%2F%2Fimages.junostatic.com%2Ffull%2FCS575646-01B-BIG.jpg&imgrefurl=http%3A%2F%2Fwww.juno.co.uk%2Fproducts%2Fmartin-landsky-da-geh-bo%2F575646-01%2F&h=675&w=700&tbnid=aEVbPuMv7y0-eM%3A&docid=YQxIyA1YPyIavM&ei=W4ntVtSwJ8PhaK2QlMgJ&tbm=isch&iact=rc&uact=3&dur=1038&page=1&start=0&ndsp=44&ved=0ahUKEwiUyqqpoM3LAhXDMBoKHS0IBZkQrQMIPzAL',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi1.sndcdn.com%2Fartworks-000095363840-o83gd2-t500x500.jpg&imgrefurl=https%3A%2F%2Fsoundcloud.com%2Fyokoo%2Fagoria-under-the-river-yokoo-above-the-clouds-live-edit&h=500&w=500&tbnid=xmzgeBtClvCqpM%3A&docid=Qy0Gj31SXkpnuM&ei=pIntVu28NIe7apmzq6AI&tbm=isch&iact=rc&uact=3&dur=977&page=1&start=0&ndsp=45&ved=0ahUKEwjtnp_MoM3LAhWHnRoKHZnZCoQQrQMIHTAA',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi1.sndcdn.com%2Fartworks-000135913522-ombllf-t500x500.jpg&imgrefurl=https%3A%2F%2Fsoundcloud.com%2Ffuselondon%2Farchie-hamilton-ebb-and-flow&h=500&w=500&tbnid=L9-FVbP7uFSgJM%3A&docid=dIq7nxd62HUBGM&ei=1YntVt2ECoa6atTRhRA&tbm=isch&iact=rc&uact=3&dur=129&page=1&start=0&ndsp=46&ved=0ahUKEwidw6PjoM3LAhUGnRoKHdRoAQIQrQMIHjAA',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2Ft64m5Lm7CrA%2Fhqdefault.jpg&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dt64m5Lm7CrA&h=360&w=480&tbnid=Lwr89l6woE4sAM%3A&docid=sIvKZjNTTjcGiM&ei=84ntVsjRNoH-aOGYvLgB&tbm=isch&iact=rc&uact=3&dur=407&page=1&start=0&ndsp=38&ved=0ahUKEwiIl_fxoM3LAhUBPxoKHWEMDxcQrQMIHjAA',
-'http://images.google.fr/imgres?imgurl=http%3A%2F%2Fwww.residentadvisor.net%2Fimages%2Freviews%2F2010%2Fif1007.jpg&imgrefurl=http%3A%2F%2Fwww.residentadvisor.net%2Ffeature.aspx%3F1157&h=312&w=312&tbnid=4W55zMxyM8xmHM%3A&docid=FIE5ezbwe9xh1M&ei=GYrtVu_GKMjtaqrwioAL&tbm=isch&iact=rc&uact=3&dur=743&page=1&start=0&ndsp=38&ved=0ahUKEwivt_iDoc3LAhXIthoKHSq4ArAQrQMILTAF',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCdBndRpW0AEzsbq.jpg&imgrefurl=https%3A%2F%2Ftwitter.com%2F_recondite_&h=600&w=600&tbnid=HbSsf0V2mG1t0M%3A&docid=J-tRNCdKZ843WM&ei=O4rtVpyCJ8Soa7uGvtgM&tbm=isch&iact=rc&uact=3&dur=190&page=1&start=0&ndsp=40&ved=0ahUKEwjci5KUoc3LAhVE1BoKHTuDD8sQrQMIHjAA',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi1.sndcdn.com%2Favatars-000117386401-gvhdq0-t500x500.jpg&imgrefurl=https%3A%2F%2Fsoundcloud.com%2Frecondite_music&h=500&w=500&tbnid=TAVU8k9Qj1vZ_M%3A&docid=lFOCsZ_pqt4i1M&ei=YYrtVpCtHcb4auGZjYAE&tbm=isch&iact=rc&uact=3&dur=226&page=1&start=0&ndsp=30&ved=0ahUKEwjQ4Zemoc3LAhVGvBoKHeFMA0AQrQMIJzAD',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZSUyg99Yz28%2Fhqdefault.jpg&imgrefurl=http%3A%2F%2Fwww.mp3tunes.tk%2Fdownload%3Fv%3DbVXofbZtAL8&h=360&w=480&tbnid=z3gRlz4Z7mUPkM%3A&docid=BTalnLKycK1jtM&itg=1&ei=fIrtVq-TKMn_abKYl8AB&tbm=isch&iact=rc&uact=3&dur=656&page=1&start=0&ndsp=35&ved=0ahUKEwivwZKzoc3LAhXJfxoKHTLMBRgQrQMIOTAJ',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2F84bwIcC1Brk%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D84bwIcC1Brk&h=720&w=1280&tbnid=x3fwBkPQKvdfVM%3A&docid=BX5wYb47A6XJgM&ei=uIrtVomaNsP3aMOchMAG&tbm=isch&iact=rc&uact=3&dur=181&page=1&start=0&ndsp=41&ved=0ahUKEwiJ1u7Poc3LAhXDOxoKHUMOAWgQrQMIHjAA',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FCOTZGbcS5BQ%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DCOTZGbcS5BQ&h=1080&w=1080&tbnid=mQrdIePKTUfrpM%3A&docid=elqjcoss0jCBNM&ei=24rtVonDA8Ota6KNvbgL&tbm=isch&iact=rc&uact=3&dur=260&page=1&start=0&ndsp=49&ved=0ahUKEwjJnJTgoc3LAhXD1hoKHaJGD7cQrQMIHjAA',
-'http://images.google.fr/imgres?imgurl=http%3A%2F%2Fwww.residentadvisor.net%2Fimages%2Freviews%2F2014%2Frms001-guygerberdixon.jpg&imgrefurl=http%3A%2F%2Fwww.residentadvisor.net%2Freview-view.aspx%3Fid%3D14605&h=472&w=472&tbnid=M2f-U3r7W7LtfM%3A&docid=h6CbuK8wbfbf3M&ei=-4rtVoDqKIWJaOXIhaAL&tbm=isch&iact=rc&uact=3&dur=3442&page=1&start=0&ndsp=40&ved=0ahUKEwjA09rvoc3LAhWFBBoKHWVkAbQQrQMIHjAA',
-'http://images.google.fr/imgres?imgurl=http%3A%2F%2Fi.imgur.com%2FRkfUp27.jpg&imgrefurl=http%3A%2F%2Fforum.funkysouls.com%2Fdump%2Ff53t127041n120.html&h=300&w=300&tbnid=FfQCBWEh0s-lHM%3A&docid=s3VwKEYe-Kh86M&ei=IYvtVry3IYiGaNCjivAI&tbm=isch&iact=rc&uact=3&dur=574&page=1&start=0&ndsp=40&ved=0ahUKEwj8y-KBos3LAhUIAxoKHdCRAo4QrQMIOTAJ',
-'http://images.google.fr/imgres?imgurl=http%3A%2F%2Fimages.junostatic.com%2Ffull%2FCS2935147-02A-BIG.jpg&imgrefurl=http%3A%2F%2Fwww.junodownload.com%2Flabels%2FStudio%2BBarnhus%2BSweden%2Freleases%2F%3Fshow_tracks%3Dall&h=700&w=700&tbnid=I6yLJhwWvtoLRM%3A&docid=Z2CbgGMW7Q5z-M&ei=VovtVpKWJob3aPSknsgP&tbm=isch&iact=rc&uact=3&dur=5007&page=1&start=0&ndsp=44&ved=0ahUKEwiSmYqbos3LAhWGOxoKHXSSB_kQrQMIMzAH',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Ffarm9.staticflickr.com%2F8729%2F16792419208_38cc9406e9_o_d.jpg&imgrefurl=http%3A%2F%2Fwww.lagasta.com%2Funknown-machine-john-talabots-synthedit%2F&h=392&w=392&tbnid=XXSlvHXqBAeIJM%3A&docid=mvdppYb7MVFF-M&ei=dovtVo-nCMWuacvdtZgC&tbm=isch&iact=rc&uact=3&dur=121&page=1&start=0&ndsp=40&ved=0ahUKEwiPuo2qos3LAhVFVxoKHctuDSMQrQMIHjAA',
-'http://images.google.fr/imgres?imgurl=http%3A%2F%2Fpepitestroniques.com%2Fwp-content%2Fuploads%2F2013%2F12%2FTale-Of-Us-Another-Earth.jpg&imgrefurl=http%3A%2F%2Fpepitestroniques.com%2F3-pepites-sonores-tale-of-us%2F&h=400&w=400&tbnid=wAYDG7PZfdwMGM%3A&docid=EG9_DZdmMYnIjM&ei=k4vtVqnyCsPaarbIltgG&tbm=isch&iact=rc&uact=3&dur=364&page=1&start=0&ndsp=43&ved=0ahUKEwjph_q3os3LAhVDrRoKHTakBWsQrQMIHTAA',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fcdn.xlr8r.com%2Fwp-content%2Fuploads%2F2015%2F10%2FRS1513.jpg&imgrefurl=https%3A%2F%2Fwww.xlr8r.com%2Fnews%2F2015%2F10%2Ftale-of-us-returns-with-new-ep%2F&h=2500&w=2500&tbnid=an5B_FGzihfxJM%3A&docid=z8dkiRPz2I5hMM&ei=oYvtVvClMoXtaPDqubgO&tbm=isch&iact=rc&uact=3&dur=148&page=1&start=0&ndsp=42&ved=0ahUKEwiw-ve-os3LAhWFNhoKHXB1DucQrQMIHjAA',
-'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fi1.sndcdn.com%2Fartworks-000108455053-eru97e-t500x500.jpg&imgrefurl=https%3A%2F%2Fsoundcloud.com%2Fcorrosive_luvv%2Fguy-gerber-timing-original-mix&h=500&w=500&tbnid=HpgC7QV_8oHqiM%3A&docid=gh2vJXrT9FeivM&ei=6ILtVrO0CYTaaqT9sMgG&tbm=isch&iact=rc&uact=3&dur=4570&page=1&start=0&ndsp=40&ved=0ahUKEwizyOuVms3LAhUErRoKHaQ-DGkQrQMIOTAJ', // same que tab[0]
+'https://i1.sndcdn.com/artworks-000108455053-eru97e-t500x500.jpg',
+'http://is1.mzstatic.com/image/thumb/Music6/v4/cd/95/cc/cd95cc01-2f21-ea9c-6075-1cff17a669c4/source/300x300bb.jpg',
+'https://api-media.beatport.com/240x240/sounds/kwfn7j2es2g7/1440435106.jpg',
+'http://images.shazam.com/coverart/t113754291-i834648203_s400.jpg',
+'https://pp.vk.me/c633119/v633119921/c5ec/l2m-_d0m9n0.jpg',
+'https://i.ytimg.com/vi/98xvgCYBTyU/hqdefault.jpg',
+'https://i.ytimg.com/vi/HSD303pGFRA/hqdefault.jpg',
+'http://images.junostatic.com/full/CS575646-01B-BIG.jpg',
+'https://i1.sndcdn.com/artworks-000095363840-o83gd2-t500x500.jpg',
+'https://i1.sndcdn.com/artworks-000135913522-ombllf-t500x500.jpg',
+'https://i.ytimg.com/vi/t64m5Lm7CrA/hqdefault.jpg',
+'https://www.residentadvisor.net/images/reviews/2010/if1007.jpg',
+'https://pbs.twimg.com/media/CdBndRpW0AEzsbq.jpg',
+'https://i1.sndcdn.com/avatars-000117386401-gvhdq0-t500x500.jpg',
+'https://i.ytimg.com/vi/ZSUyg99Yz28/hqdefault.jpg',
+'https://i.ytimg.com/vi/84bwIcC1Brk/maxresdefault.jpg',
+'https://i.ytimg.com/vi/COTZGbcS5BQ/maxresdefault.jpg',
+'https://www.residentadvisor.net/images/reviews/2014/rms001-guygerberdixon.jpg',
+'http://i.imgur.com/RkfUp27.jpg',
+'http://images.junostatic.com/full/CS2935147-02A-BIG.jpg',
+'https://farm9.staticflickr.com/8729/16792419208_38cc9406e9_o_d.jpg',
+'http://1.bp.blogspot.com/-5RV6hLBhgZ4/UWuySZkB29I/AAAAAAAAAPo/P5hEqsyN9yc/s1600/533419_586869297998154_410433523_n.jpg',
+'https://d1wtzzt4oxg683.cloudfront.net/images/covers/large/49/156049.jpg',
+'https://i1.sndcdn.com/artworks-000108455053-eru97e-t500x500.jpg', // same que tab[0]
 ];
 
 var tabLevel1_track = [        // to stock track name of level 1
@@ -358,7 +358,6 @@ function start_game() {
         soundAlea(); // determine nombre aléatoire 
         iframe(idYT);
         writeLevel();
-        document.getElementById('share').style.visibility='hidden';
     }
 }
 
@@ -647,7 +646,6 @@ function win() {
         level();
         writeLevel();
         drawSong();
-        document.getElementById('share').style.visibility='visible';
         soundAlea();
         levelUrl();
         iframe(idYT);
@@ -914,4 +912,3 @@ function iframe(idYT) {
 function writeLevel () {
     document.getElementById('level').innerHTML = '<h2>Niveau '+game.level+'</h2>';
 }
-
