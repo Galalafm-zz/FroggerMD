@@ -314,27 +314,31 @@ function soundAlea() {
     else if (game.level == 2) {
         i = Math.ceil(Math.random()*16);
         soundL2 = tabLevel2[i];
-        artist = tabLevel1_artist[i];
-        track = tabLevel1_track[i];
-        idCover = tabLevel1_cover[i];
+        console.log(i, soundL2);
+        artist = tabLevel2_artist[i];
+        track = tabLevel2_track[i];
+        idCover = tabLevel2_cover[i];
     }
     else if (game.level == 3) {
         i = Math.ceil(Math.random()*11);
         soundL3 = tabLevel3[i];
-        artist = tabLevel1_artist[i];
-        track = tabLevel1_track[i];
-        idCover = tabLevel1_cover[i];
+        artist = tabLevel3_artist[i];
+        track = tabLevel3_track[i];
+        idCover = tabLevel3_cover[i];
     }
     else if (game.level == 4) {
         i = Math.ceil((Math.random()*10)/2);
         soundL4 = tabLevel4[i];
-        artist = tabLevel1_artist[i];
-        track = tabLevel1_track[i];
-        idCover = tabLevel1_cover[i];
+        artist = tabLevel4_artist[i];
+        track = tabLevel4_track[i];
+        idCover = tabLevel4_cover[i];
     }
     else {
         i = Math.ceil((Math.random()*10)/2);
         soundL5 = tabLevel5[i];
+        artist = tabLevel5_artist[i];
+        track = tabLevel5_track[i];
+        idCover = tabLevel5_cover[i];
     }
 }
 function game_loop() {
