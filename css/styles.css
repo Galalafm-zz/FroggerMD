@@ -91,8 +91,8 @@ a{
 	margin: auto;
 	text-align: center;
 	background: #012837;
-	height:844px;
 	border-color: #011f29;
+	padding-bottom: 50px;
 }
 
 
@@ -116,31 +116,55 @@ a{
 	font-weight: 100;
 }
 
+.line2 {
+	position: relative;
+	height:5px;
+	width:300px;
+	background-color: #00c99b;
+	margin:auto;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.sub-title3 {
+	margin: auto;
+	text-align: center;
+}
+
+.sub-title3 h2{
+	font-size: 29px;
+	color: white;
+	font-weight: 100;
+}
+
+.sub-title3 p{
+	font-size: 15px;
+	color: white;
+	font-weight: 100;
+}
+
 .gender ul{
 	display: inline-block;
 	text-decoration: none;
 	background-color: #041B27;
 	width:87%;
+	padding-bottom: 40px;
 }
 
 .gender li{
 	display: inline-block;
 	text-decoration: none;
 	margin-right: 50px;
-	margin-top: 30px;
-
-}
-
-.gender li:hover{
-	border:7px solid #00c99b;
+	margin-top: 40px;
 	width:220px;
-	height: 220px;
-	transition-duration: 0.3s;
+	height:220px;
+	background-color: white;
 }
 
 .gender img{
-	width:220px;
-	height:220px;
+	width:170px;
+	height:170px;
+	margin-top:20px;
 }
 
 .play{
@@ -239,4 +263,82 @@ a{
 	margin-top: 15px;
 }
 
+.hover {
+	width:220px;
+	height:220px;
+	position:absolute;
+	z-index:999;
+	opacity:1;
+}
+
+.hover h2 {
+	margin-top: 88px;
+	font-size: 35px;
+	color:white;
+}
+
+
+.hover h3 {
+	margin-top: 80px;
+	font-size: 25px;
+	color:white;
+}
+
+.s1 {
+	background: url(../images/dj-platine.png);
+}
+
+.s2 {
+	background: url(../images/rockc.png);
+}
+
+.s3 {
+	background: url(../images/rapp.png);
+}
+
+.s4 {
+	background: url(../images/houuse.png);
+}
+
+.s5 {
+	background: url(../images/classik.png);
+}
+
+.s6 {
+	background: url(../images/alternativ.png);
+}
+
+.bouton{
+	margin:auto;
+	text-align:center;
+	width: 150px;
+	height: 50px;
+	background-color: #002331;
+	border:1px solid #02ca97;
+	cursor: pointeur;	
+}
+
+.bouton:hover{
+	background-color: #02ca97;
+	border:1px solid #002331;
+	cursor: pointer;
+	color:#002331;
+
+}
+
+.bouton a{
+	font-size: 17px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	color: #02ca97;
+	font-weight: bold;
+	text-align: center;
+	margin-top:10px;
+	text-decoration: none;
+	line-height:50px;
+}
+
+.bouton a:hover{
+	color:#002331;
+}
 
