@@ -142,9 +142,10 @@ a{
 	text-align: center;
 	color: white;
 	font-size: 19px;
-	font-weight: 600;
+	font-weight: 100;
 	margin-bottom: 50px;
 	line-height: 35px;
+	font-family: "montserrat-regular";
 
 }
 
