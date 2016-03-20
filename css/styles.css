@@ -124,6 +124,7 @@ a{
 .sub-title2{
 	margin: auto;
 	text-align: center;
+
 }
 
 .sub-title2 p{
@@ -157,6 +158,7 @@ a{
 	font-size: 15px;
 	color: white;
 	font-weight: 100;
+	margin-top: 30px;
 }
 
 .gender ul{
@@ -165,6 +167,7 @@ a{
 	background-color: #041B27;
 	width:87%;
 	padding-bottom: 40px;
+
 }
 
 .gender li{
@@ -214,69 +217,14 @@ a{
 	margin: auto;
 	text-align: center;
 	background: #012837;
-	height:120px;
+	height:70px;
 	border-color: #011f29;
-	border-top: 1px solid black;
+	border-top: 3px solid #062330;
 }
 
-
-.left{
-	float: left;
-	margin-left: 17%;
-	text-decoration: none;
-}
-
-.left ul{
-	display: inline-block;
-	text-decoration: none;
-}
-
-.left li {
-	list-style: none;
-}
-
-.left li a{
-	display: block;
-	text-decoration: none;
-	text-align: right;
-	margin-bottom: 4px;
-}
-
-.left li a:hover{
-	color:#00c99b;
-}
-
-.right{
-	margin-right: 20%;
-	float: right;
-	color: white;
-	display: block;
-}
-
-.right ul{
-	text-decoration: none;
-
-}
-
-.right li a{
-	display: block;
-	text-decoration: none;
-	text-align: left;
-	margin-bottom: 4px;
-}
-
-
-
-.right img{
-	width:25px;
-	height: 25px;
-	display: inline-block;
-	margin-left: 10px;
-}
-
-.rs{
-	text-align: left;
-	margin-top: 15px;
+.container3 p {
+	color:#B8B8B8;
+	margin-top: 28px
 }
 
 .hover {
@@ -329,14 +277,14 @@ a{
 	text-align:center;
 	width: 150px;
 	height: 50px;
+	margin-top:20px;
 	background-color: #002331;
-	border:1px solid #02ca97;
 	cursor: pointeur;	
 }
 
 .bouton:hover{
 	background-color: #02ca97;
-	border:1px solid #002331;
+	border-top:1px solid #02ca97;
 	cursor: pointer;
 	color:#002331;
 
@@ -354,7 +302,7 @@ a{
 	line-height:50px;
 }
 
-.bouton a:hover{
+.bouton:hover a{
 	color:#002331;
 }
 
