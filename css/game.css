@@ -44,7 +44,7 @@ body {
 .items{
 	float:right;
 	display: inline-block;
-	margin-right: 50px;
+	margin-right: 20px;
 }
 
 .items ul{
@@ -55,18 +55,31 @@ body {
 .items li{
 	display: inline-block;
 	color: white;
+	border-top:3px solid #53C29C;
+	/*background-color: #0C2835;*/
 	font-size: 12px;
 	font-weight: 400;
+	height: 40px;
+	width: 80px;
 	margin-right: 20px;
+	text-align: center;
 }
 
 .items li a:hover{
 	color:#00c99b;
 }
 
-.items a{
+.items li a{
 	text-decoration: none;
 	color:white;
+	padding:0;
+	margin:auto;
+}
+
+.items li h4 {
+	margin:0;
+	padding: 0;
+	margin-top:13px;
 }
 
 .music{
@@ -74,7 +87,7 @@ body {
     height: 500px;
     float: right;
     margin-top: 100px;
-    margin-right: -200px;
+    margin-right: -180px;
     text-align: center;
     color: white;
 }

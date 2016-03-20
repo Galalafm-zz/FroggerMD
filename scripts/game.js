@@ -46,16 +46,16 @@ var tabLevel1_cover = [        // to stock cover ID of level 1
 'http://images.junostatic.com/full/CS575646-01B-BIG.jpg',
 'https://i1.sndcdn.com/artworks-000095363840-o83gd2-t500x500.jpg',
 'https://i1.sndcdn.com/artworks-000135913522-ombllf-t500x500.jpg',
-'https://i.ytimg.com/vi/t64m5Lm7CrA/hqdefault.jpg',
+'https://s.mxmcdn.net/images-storage/albums8/9/6/2/6/8/8/11886269_800_800.jpg', 
 'https://www.residentadvisor.net/images/reviews/2010/if1007.jpg',
 'https://pbs.twimg.com/media/CdBndRpW0AEzsbq.jpg',
 'https://i1.sndcdn.com/avatars-000117386401-gvhdq0-t500x500.jpg',
-'https://i.ytimg.com/vi/ZSUyg99Yz28/hqdefault.jpg',
+'https://www.residentadvisor.net/images/cover/tr-669129.jpg',
 'https://i.ytimg.com/vi/84bwIcC1Brk/maxresdefault.jpg',
 'https://i.ytimg.com/vi/COTZGbcS5BQ/maxresdefault.jpg',
 'https://www.residentadvisor.net/images/reviews/2014/rms001-guygerberdixon.jpg',
 'http://i.imgur.com/RkfUp27.jpg',
-'http://images.junostatic.com/full/CS2935147-02A-BIG.jpg',
+'http://i.imgur.com/qLInNue.jpg',
 'https://i1.sndcdn.com/artworks-000108455053-eru97e-t500x500.jpg', // same que tab[0]
 ];
 
@@ -915,3 +915,16 @@ function iframe(idYT) {
 // function writeLevel () {
 //     document.getElementById('level').innerHTML = '<h2>Niveau '+game.level+'</h2>';
 // }
+
+
+// menu
+
+$(document).ready(function(){
+
+    var ul = document.getElementsByClassName('.items');
+    console.log(ul);
+    var li = ul.getElementsByTagName("li");
+    console.log(ul);
+    li.style.backgroundColor = "#0C2835";
+
+});
