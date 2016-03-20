@@ -915,16 +915,3 @@ function iframe(idYT) {
 // function writeLevel () {
 //     document.getElementById('level').innerHTML = '<h2>Niveau '+game.level+'</h2>';
 // }
-
-
-// menu
-
-$(document).ready(function(){
-
-    var ul = document.getElementsByClassName('.items');
-    console.log(ul);
-    var li = ul.getElementsByTagName("li");
-    console.log(ul);
-    li.style.backgroundColor = "#0C2835";
-
-});

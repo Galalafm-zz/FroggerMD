@@ -42,15 +42,6 @@ a{
 	width: 150px;
 }
 
-.logo{
-	float: left;
-	margin-left: 50px;
-}
-
-.logo:hover{
-	cursor: pointer;
-}
-
 .items{
 	float:right;
 	display: inline-block;
@@ -67,12 +58,29 @@ a{
 	color: white;
 	font-size: 12px;
 	font-weight: 400;
-	margin-right: 20px;
+	height: 40px;
+	width: 80px;
+	text-align: center;
 }
+
 
 .items li a:hover{
 	color:#00c99b;
 }
+
+.items li a{
+	text-decoration: none;
+	color:white;
+	padding:0;
+	margin:auto;
+}
+
+.items li h4 {
+	margin:0;
+	padding: 0;
+	margin-top:13px;
+}
+
 
 .background{
 	margin-top: 70px;
