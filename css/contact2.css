@@ -203,6 +203,14 @@ a{
     
 }
 
+.team .gala{
+margin-right: 15px;
+}
+
+.team .arthur{
+	margin-right: 15px;
+}
+
 .description-1 p{
 	display: inline-block;
     padding-left: 47px;
@@ -267,60 +275,123 @@ a{
 
 form{
 	float: left;
-	margin-top: 90px;
-	margin-bottom:100px;
-
+	width: 500px;
 }
 
-body .infos .error #name {
-	width: 150px;
+body #name {
+	width: 30%;
 	margin-bottom: 20px;
-    height: 20px;
+    height: 30px;
     border-radius: 2px;
-    border: 1px solid #00c99b;
+    border: 2px solid #00c99b;
     padding: 3px;
     float: left;
+    margin-right: 20px;
+    font-size: 12px;
+	letter-spacing: 2px;
+
 }
 
-body .infos .mail #mail {
-	width: 250px;
+body #mail {
+
+	width: 60%;
 	margin-bottom: 20px;
-    height: 20px;
+    height: 30px;
     border-radius: 2px;
-    border: 1px solid #00c99b;
+    border: 2px solid #00c99b;
     padding: 3px;
     float: left;
+    font-size: 12px;
+	letter-spacing: 2px;
 }
 
-body .infos #son {
-	width: 250px;
+body #title {
+
+	width: 50%;
 	margin-bottom: 20px;
-    height: 20px;
+    height: 30px;
     border-radius: 2px;
-    border: 1px solid #00c99b;
+    border: 2px solid #00c99b;
     padding: 3px;
-    float:left;
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+	letter-spacing: 2px;
 }
 
-body .infos .com #com {
-	width: 250px;
+body #artist {
+
+	width: 40%;
 	margin-bottom: 20px;
-    height: 80px;
+    height: 30px;
     border-radius: 2px;
-    border: 1px solid #00c99b;
+    border: 2px solid #00c99b;
     padding: 3px;
-    float:left;
+    float: left;
+    font-size: 12px;
+	letter-spacing: 2px;
 }
 
-input {
-	width: 100px;
+body #id {
+
+	width: 96%;
+	margin-bottom: 20px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid #00c99b;
+    padding: 3px;
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+	letter-spacing: 2px;
+}
+
+body #cover {
+
+	width: 96%;
+	margin-bottom: 20px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid #00c99b;
+    padding: 3px;
+    float: left;
+    font-size: 12px;
+	letter-spacing: 2px;
+ }
+
+body #comment {
+
+	width: 96%;
 	margin-bottom: 20px;
     height: 50px;
     border-radius: 2px;
-    border: 1px solid #00c99b;
+    border: 2px solid #00c99b;
     padding: 3px;
-    float:left;
-    background-color: white;
+    float: left;
+    font-size: 12px;
+	letter-spacing: 2px;
+ }
+
+.submit {
+	width: 150px;
+	height: 50px;
+	color: white;
+	font-weight: 700;
+	border: none;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-top: 20px;
+	background: #00c99b;
+	font-size: 14px;
+	letter-spacing: 3px;
+}
+
+.submit:hover {
+	cursor:pointer;
+	background: white;
+	color: #00c99b;
+	border: 3px solid #00c99b;
 }
 
 .map{
@@ -352,14 +423,36 @@ input {
 	cursor: pointer;
 }
 
+div.id {
+    display: inline;
+}
+ 
+div.id p {
+    display: none;
+}
 
+.id {
+	position: relative;
+}
+ 
+div.id:hover p {
+    display: block;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    position: absolute;
+    margin: -20 px 0 0 -30px;
+    background: #00c99b;
+    border-radius: 6;
+    color: white;
+    left:-620px;
+    top:20px;
+}
 
-
-
-
-
-
-
+h3{
+	color: #FEFEFE;
+	font-size: 20px;
+}
 
 
 
