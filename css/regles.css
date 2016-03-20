@@ -123,22 +123,29 @@ a{
 }
 
 .container2 a:hover {
-	color: #34CA97;
 	text-decoration:none;
+}
+
+
+.container2 a {
+	color:#00c99b;
 }
 
 .title p{
 	font-size: 27px;
 	color: white;
 	margin-bottom: 80px;
+	text-align: center;
 }
 
-.para-1 p{
-	text-align: left;
+.para-1 h1{
+	text-align: center;
 	color: white;
-	font-size: 16px;
+	font-size: 19px;
+	font-weight: 600;
 	margin-bottom: 50px;
 	line-height: 35px;
+
 }
 
 .para-2 p{
@@ -148,6 +155,7 @@ a{
 	margin-bottom: 50px;
 	line-height: 35px;
 }
+
 
 .para-3 p{
 	text-align: left;
