@@ -659,6 +659,43 @@ function drawSong() {
     trackCover(idCover);
     trackName(track);
     trackArtist(artist);
+
+    // facebook = document.createElement("div");
+    // facebook.setAttribute('id', 'fb-share-button');
+    // urlYT = 'https://www.youtube.com/watch?v=' + idYT;
+    // facebook.setAttribute('data-href', urlYT);
+    // facebook.setAttribute('data-layout', 'button');
+    // facebook.setAttribute('fb-iframe-plugin-query', 'app_id=181612018582687&container_width=210&href=http%3A%2F%2Fcoucou%2F&layout=button&locale=fr_FR&sdk=joey')
+    // facebook.setAttribute('fb-xfbml-state', 'rendered');
+
+    // document.getElementById('social').appendChild(facebook);
+
+    // spanFB = document.createElement("span");
+    // spanFB.style.verticalAlign = "bottom";
+    // spanFB.style.width = "72px";
+    // spanFB.style.height = "20px";
+    // spanFB.setAttribute('id', 'spanFB');
+
+    // document.getElementById("fb-share-button").appendChild(spanFB)
+
+    // iframeFB = document.createElement("iframe");
+    // iframeFB.setAttribute('name', 'fe6b5772150ae8');
+    // iframeFB.setAttribute('width', '1000px');
+    // iframeFB.setAttribute('height', '1000px');
+    // iframeFB.setAttribute('frameborder', '0');
+    // iframeFB.setAttribute('allowtransparency', 'true');
+    // iframeFB.setAttribute('allowfullscreen', 'true');
+    // iframeFB.setAttribute('scrolling', 'no');
+    // iframeFB.setAttribute('title', 'fb:share_button Facebook Social Plugin');
+    // iframeFB.setAttribute('src', 'http://www.facebook.com/v2.5/plugins/share_button.php?app_id=181612018582687&channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D42%23cb%3Df188d04f0b2188c%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%253A8888%252Ff3a0f3b5936d594%26relation%3Dparent.parent&container_width=210&href=http%3A%2F%2Fcoucou%2F&layout=button&locale=fr_FR&sdk=joey');
+    // iframeFB.setAttribute('style', 'border: none; visibility: visible; width: 72px; height: 20px;');
+   
+    // document.getElementById('spanFB').appendChild(iframeFB);
+
+    // pluginFB = document.createElement
+
+
+
 }
 
 function levelUrl() {
