@@ -21,6 +21,28 @@ body {
 	font-family:'Montserrat', sans-serif;
 }
 
+#btn {
+  background: #34CA97;
+  background-image: -webkit-linear-gradient(top, #34CA97, #228E6B);
+  background-image: -moz-linear-gradient(top, #34CA97, #228E6B);
+  background-image: -ms-linear-gradient(top, #34CA97, #228E6B);
+  background-image: -o-linear-gradient(top, #34CA97, #228E6B);
+  background-image: linear-gradient(to bottom, #34CA97, #228E6B);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 12px 10px 12px;
+  text-decoration: none;
+}
+
+#btn:hover {
+  background: #061B28;
+  text-decoration: none;
+}
+
 .logo {
 	color: #062330;
 	margin-left: 0;
