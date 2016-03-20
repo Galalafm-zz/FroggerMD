@@ -12,10 +12,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>FROGGER</title>
-		<link rel="stylesheet" href="src/css/contact2.css">
+		<title>FROGGER MD</title>
+		<link rel="stylesheet" href="css/contact.css">
 
-		<link rel="stylesheet" href="src/css/reset.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -25,15 +24,15 @@
 		<div class="container">
 			<div class="nav-bar">
 				<div class="logo">
-					<a href="#"><img src="images/logo.png"></a>
+					<a href="styles.html"><img src="images/logo.png"></a>
 				</div>
 
 				<div class="items">
 					<ul>
-						<li><a href="homepage.html">ACCUEIL</a></li>
-						<li><a href="regles.html">RÈGLES</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
-						<li><a href="#">PROFIL</a></li>
+						<li id="li4"><h4><a href="styles.html">ACCUEIL</a></h4></li>
+						<li id="li5"><h4><a href="regles.html">RÈGLES</a></h4></li>
+						<li id="li6"><h4><a href="contact.php">CONTACT</a></h4></li>
+						<!-- <li><a href="#" onClick="window.open('pop_up.html','mon_popup','toolbar=1,location=1,directories=1,status=1,scrollbars=1,resizable=1,copyhistory=1,width=800,height=400,screenX=200,screenY=200');">PROFIL</a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -45,7 +44,7 @@
 			<span class="horaires">Lundi au Vendredi : 08h30 - 21h30</span>
 		</div>
     <div class="background">
-      <img src="src/images/work.jpeg" alt="qg"/>
+      <img src="images/work.jpeg" alt="qg"/>
     </div>
 
     <div class="container2">
@@ -56,18 +55,18 @@
     	</div>
     	<div class="team">
     		<div class="rang-1">
-    			<img class="gala" src="src/équipes/gala.png">
-    			<img class="arthur" src="src/équipes/chassin.png">
-    			<img class="pierre" src="src/équipes/pdg.png">
+    			<img class="gala" src="images/gala.png">
+    			<img class="arthur" src="images/chassin.png">
+    			<img class="pierre" src="images/pdg.png">
     		</div>
     		<div class="description-1">
     			<p>Gala Pillot<br><span class="green">Développeur back</span></p>
     			<p>Arthur Chassin<br><span class="green">Designer</span></p>
-    			<p>Pierre de Gourcy<br><span class="green">Developpeur back</span></p>
+    			<p>Pierre de Gourcy<br><span class="green">Chef de projet</span></p>
     		</div>
     		<div class="rang-2">
-    			<img src="src/équipes/peltre.png">
-    			<img src="src/équipes/dlr.png">
+    			<img src="images/peltre.png">
+    			<img src="images/dlr.png">
     		</div>
     		<div class="description-2">
     			<p>Antoine Peltre<br><span class="green">Développeur front</span></p>
@@ -82,10 +81,10 @@
 			<div class="line">
 			</div>
 			<div class="rs">
-				<a href="#"><img src="src/images/facebook.png"></a>
-				<a href="#"><img src="src/images/twitter.png"></a>
-				<a href="#"><img src="src/images/snapchat.png"></a>
-				<a href="#"><img src="src/images/instagram.png"></a>
+				<a target=_blank href="https://www.facebook.com/FroggerMD/"><img src="images/facebook.png"></a>
+				<a target=_blank href="https://twitter.com/frogger_md"><img src="images/twitter.png"></a>
+				<img alt="Frogger MD" title="Frogger MD" src="images/snapchat.png"></a>
+				<a target=_blank href="https://www.instagram.com/froggermd/"><img src="images/instagram.png"></a>
 			</div>
 		</div>
 
@@ -135,7 +134,7 @@
 				</div>
 				</form>
 				<div class="map">
-					<img src="src/images/map.png">
+					<img src="images/map.png">
 				</div>
 
 
@@ -146,7 +145,7 @@
 		
 	
 
-		<script src="src/js/libs/jquery-2.2.0.min.js"></script>
-		<script src="src/js/app/contact.js"></script>
-	</body>
+		<script src="assets/jquery-2.2.0.min.js"></script>
+		<script src="assets/jquery.min.js"></script>
+		<script src="scripts/menu.js"></script>	</body>
 </html>

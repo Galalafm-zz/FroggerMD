@@ -253,7 +253,6 @@ a{
 	width:75%;
 	margin:auto;
 	text-align: center;
-	
 }
 
 .title2{
@@ -268,14 +267,7 @@ a{
 	font-size: 23px;
 }
 
-form{
-	float: left;
-	margin-top: 90px;
-	margin-bottom:100px;
-
-}
-
-body .infos .error #name {
+/*body .infos .error #name {
 	width: 150px;
 	margin-bottom: 20px;
     height: 20px;
@@ -324,16 +316,140 @@ input {
     padding: 3px;
     float:left;
     background-color: white;
+}*/
+
+form{
+	float: left;
+	width: 400px;
+	margin-left: 0;
+	margin-top: 50px;
+}
+
+body #name {
+	width: 30%;
+	margin-bottom: 20px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid #00c99b;
+    padding: 3px;
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+	letter-spacing: 2px;
+
+}
+
+body #mail {
+
+	width: 60%;
+	margin-bottom: 20px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid #00c99b;
+    padding: 3px;
+    float: left;
+    font-size: 12px;
+	letter-spacing: 2px;
+}
+
+body #title {
+
+	width: 50%;
+	margin-bottom: 20px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid #00c99b;
+    padding: 3px;
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+	letter-spacing: 2px;
+}
+
+body #artist {
+
+	width: 40%;
+	margin-bottom: 20px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid #00c99b;
+    padding: 3px;
+    float: left;
+    font-size: 12px;
+	letter-spacing: 2px;
+}
+
+body #id {
+
+	width: 96%;
+	margin-bottom: 20px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid #00c99b;
+    padding: 3px;
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+	letter-spacing: 2px;
+}
+
+body #cover {
+
+	width: 96%;
+	margin-bottom: 20px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid #00c99b;
+    padding: 3px;
+    float: left;
+    font-size: 12px;
+	letter-spacing: 2px;
+ }
+
+body #comment {
+
+	width: 96%;
+	margin-bottom: 20px;
+    height: 50px;
+    border-radius: 2px;
+    border: 2px solid #00c99b;
+    padding: 3px;
+    float: left;
+    font-size: 12px;
+	letter-spacing: 2px;
+ }
+
+.submit {
+	width: 150px;
+	height: 50px;
+	color: white;
+	font-weight: 700;
+	border: none;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-top: 20px;
+	background: #00c99b;
+	font-size: 14px;
+	letter-spacing: 3px;
+}
+
+.submit:hover {
+	cursor:pointer;
+	background: white;
+	color: #00c99b;
+	border: 3px solid #00c99b;
 }
 
 .map{
-	margin-top: 50px;
+	margin-top: 140px;
+	margin-left: 0px;
 	float: right;
 }
 
 .map img{
-	width: 350px;
-	height:350px;
+	width: 300px;
+	height:300px;
 }
 
 .container3{
@@ -350,6 +466,39 @@ input {
 	color:#B8B8B8;
 	margin-top: 28px
 }
+
+div.id {
+    display: inline;
+}
+ 
+div.id p {
+    display: none;
+}
+
+.id {
+	position: relative;
+}
+ 
+div.id:hover p {
+    display: block;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    position: absolute;
+    margin: 20px 0 0 80px;
+    background: #00c99b;
+    border-radius: 6;
+    color: white;
+    left:-620px;
+    top:20px;
+}
+
+h3{
+	color: #FEFEFE;
+	font-size: 20px;
+}
+
+
 
 
 
