@@ -350,15 +350,16 @@ function start_game() {
         iframe(idYT);
         document.getElementById('share').style.visibility='hidden';
         cover = document.getElementById('cover');
+        document.getElementById()
     }
 }
 
 function restart() {
-    // game = new Game();
-    // game_loop();
-    // soundAlea(); // determine nombre aléatoire 
-    // iframe(idYT);
-    win();
+    game = new Game();
+    game_loop();
+    soundAlea(); // determine nombre aléatoire 
+    iframe(idYT);
+
 }
 
 function soundAlea() {
@@ -638,7 +639,7 @@ function check_win() {
 function win() {
     game.score += 50;
     game.win = 15;
-    // if(game.won[0] && game.won[1] && game.won[2] && game.won[3] && game.won[4]){
+    if(game.won[0] && game.won[1] && game.won[2] && game.won[3] && game.won[4]){
         cover.innerHTML = '<img src="'+idCover+'">';
         level();
         drawSong();
@@ -649,7 +650,7 @@ function win() {
         var enfant = document.getElementById('msg');
         var parent = document.getElementById('container3');
         parent.removeChild(enfant);
-    // }    
+     }    
 }
 
 function drawSong() {
@@ -659,6 +660,7 @@ function drawSong() {
     trackCover(idCover);
     trackName(track);
     trackArtist(artist);
+
 
     // facebook = document.createElement("div");
     // facebook.setAttribute('id', 'fb-share-button');

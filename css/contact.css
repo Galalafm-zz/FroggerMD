@@ -336,6 +336,21 @@ input {
 	height:350px;
 }
 
+.container3{
+	width:100%;
+	margin: auto;
+	text-align: center;
+	background: #012837;
+	height:70px;
+	border-color: #011f29;
+	border-top: 3px solid #062330;
+}
+
+.container3 p {
+	color:#B8B8B8;
+	margin-top: 28px
+}
+
 
 
 
