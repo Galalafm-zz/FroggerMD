@@ -32,7 +32,7 @@ body {
 /*  -webkit-border-radius: 7;
   -moz-border-radius: 7;
   border-radius: 7px;*/
-  font-family: "montserrat-regular";
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 15px;
   padding: 10px 12px 10px 12px;
@@ -144,7 +144,7 @@ body {
 	padding: 0;
 	margin:0;
 	font-size: 12pt;
-	font-family: "montserrat-regular";
+	font-family: 'Montserrat', sans-serif;
 	padding-top: 12px;
 }
 
@@ -244,7 +244,7 @@ body {
 }
 
 .name, .artist{
-	font-family: 'montserrat-regular';
+	font-family: 'Montserrat', sans-serif;
 	margin-top: 50px;
 	font-size: 16px;
 	font-weight: 200;
